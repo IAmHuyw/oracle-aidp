@@ -163,3 +163,20 @@
 | **Execution Timeout & Retries** | **Execution timeout** là giới hạn thời gian chạy tối đa của task (1 phút – 48 giờ) tránh bị treo mãi; **Retries** là số lần tự động chạy lại nếu task lỗi (có tùy chọn `Retry on timeout`). |
 | **Repair Run** | Tính năng **chạy khôi phục thông minh**: chỉ chạy lại những task bị lỗi đã chọn thay vì chạy lại cả workflow từ đầu. Tham số truyền cho Repair Run chỉ áp dụng cho riêng lần sửa lỗi đó. |
 | **CI/CD & Runbooks** | **CI/CD** (*Continuous Integration / Continuous Deployment*) là quy trình tự động kiểm thử & triển khai code; **Runbooks** là kịch bản vận hành tự động — kết nối với AIDP qua **REST APIs, SDKs và CLI**. |
+
+---
+
+## Module 7: Share and Integrate Data
+
+| Thuật ngữ | Nghĩa / Giải thích dễ hiểu cho người mới |
+|---|---|
+| **Share & Recipient (Delta Sharing)** | **Share** là gói chia sẻ chứa các bảng Delta / Schema; **Recipient** là đối tượng đại diện cho người hoặc hệ thống bên ngoài được cấp quyền truy cập gói đó mà không cần copy dữ liệu. |
+| **Activation Link & `.share` Profile File** | Khi kích hoạt một Recipient, hệ thống tạo **link dùng 1 lần** chứa thông tin xác thực (**Credential Profile**). Người nhận lưu thành file **`.share`** để client bên ngoài kết nối vào đọc bảng theo cú pháp `share.schema.table`. |
+| **Bearer Token (90-day default)** | **Mã xác thực truy cập** bên trong profile Delta Sharing có hạn mặc định **90 ngày** — cần gia hạn (*refresh/extend*) trước khi hết hạn để duy trì truy cập. |
+| **`DESCRIBE recipient <name>`** | Câu lệnh Spark SQL chạy trong AIDP Notebook để xem thông tin chi tiết ẩn không có trên UI của người nhận (như ngày hết hạn token `bear_token_expiration` và `delta_share_endpoint`). |
+| **Oracle Analytics Cloud (OAC)** | Dịch vụ BI và trực quan hóa dữ liệu đám mây của Oracle, có sẵn **Built-in AIDP Connector** kết nối trực tiếp vào **1 Standard Catalog** trên AIDP. |
+| **API Key Fingerprint & Private Key (`.pem`)** | Cặp xác thực của người dùng OCI khi nối OAC vào AIDP: **Fingerprint** là chuỗi mã nhận diện ngắn điền vào file `config.json`, còn **Private API Key (`.pem`)** là tệp khóa bí mật upload vào OAC. |
+| **JDBC / ODBC Drivers** | Hai trình điều khiển kết nối dữ liệu chuẩn công nghiệp (tải tại tab `Connection Details` của Compute Cluster) giúp các công cụ BI ngoài như **Tableau** và **Power BI** truy vấn dữ liệu AIDP. |
+| **Streaming vs. Batch Processing** | **Batch** gom dữ liệu lại xử lý theo từng đợt định kỳ (vd mỗi đêm/mỗi tuần); **Streaming** xử lý bản ghi **liên tục theo thời gian thực** ngay khi vừa phát sinh. |
+| **Apache Kafka** | Nền tảng **truyền luồng sự kiện (Event Streaming)** chuẩn công nghiệp — AIDP Spark Notebooks có thể đọc trực tiếp các luồng sự kiện Kafka và ghi thành bảng có quản trị. |
+| **BICC (Business Intelligence Cloud Connector)** | Công cụ **trích xuất dữ liệu hàng loạt (Bulk Extract)** từ **Oracle Fusion Applications** đổ ra **OCI Object Storage**, từ đó AIDP đọc vào qua External Table hoặc External Volume. |
