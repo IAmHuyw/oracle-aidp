@@ -122,3 +122,44 @@
 | **ML Experiment** | **Thí nghiệm Học máy**: Nơi ghi nhận và so sánh nhiều lần chạy huấn luyện mô hình (*training runs*) với thuật toán/dữ liệu khác nhau để chọn mô hình chuẩn nhất. |
 | **Git Folder** | Thư mục trong AIDP Workspace liên kết trực tiếp với một kho mã nguồn **Git** bên ngoài (GitHub, Bitbucket, GitLab, OCI DevOps) hỗ trợ `commit`, `push`, `pull`, `merge`. |
 | **Personal Access Token (PAT)** | **Mã thông báo truy cập cá nhân** (tạo trên GitHub/Git provider) dùng thay mật khẩu để cấp quyền cho AIDP kết nối và đồng bộ code an toàn với kho Git của bạn. |
+
+---
+
+## Module 5: Running Code in AIDP Notebooks
+
+| Thuật ngữ | Nghĩa / Giải thích dễ hiểu cho người mới |
+|---|---|
+| **AIDP Notebook** | Sổ tay lập trình tương tác kết hợp **Code Cells** (Python, SQL, Scala, lệnh shell cơ bản), **Markdown Cells** (ghi chú văn bản) và **Result Cells** (kết quả tải được ra CSV/Excel). |
+| **Cell Magic (`%%sql`)** | Ký hiệu đặc biệt đặt ở dòng đầu một ô code để đổi ngôn ngữ chạy riêng cho ô đó (ví dụ chạy câu lệnh SQL ngay trong một Notebook đang mặc định ngôn ngữ Python). |
+| **Three-Part Naming (Fully Qualified Name)** | Quy ước gọi tên đầy đủ 3 cấp **`catalog.schema.table`** (áp dụng cho cả Standard & External Catalog) giúp tránh nhầm lẫn khi nhiều nơi có bảng trùng tên. |
+| **Cluster-Level Libraries** | Các thư viện phần mềm được cài cố định ở cấp Compute Cluster — giúp code chạy thử tay trên Notebook và code chạy tự động trên Workflow có chung môi trường, tránh lỗi thiếu thư viện. |
+| **Code Context vs. Compute Context Failures** | Hai nhóm lỗi khi chạy Notebook: **Code Context** là lỗi từ nội dung code (sai đường dẫn, thiếu file, sai tên bảng/cột); **Compute Context** là lỗi từ máy tính xử lý (cluster tắt, hết RAM, sai runtime, thiếu thư viện). |
+| **Programmatic Asset Management** | Tạo, đọc, sửa các tài sản AIDP (schemas, tables, volumes, models...) **bằng dòng code trong Notebook** thay vì phải bấm tay trên giao diện UI. |
+| **Deterministic (Standard) Transformation** | Biến đổi dữ liệu theo quy tắc cố định (lọc, nối bảng, đổi kiểu dữ liệu, tính tổng...) — đầu vào giống nhau thì đầu ra luôn giống hệt nhau. |
+| **AI Augmentation (Inference-Based)** | Làm giàu dữ liệu bằng mô hình AI/ML (suy luận ngữ nghĩa, phân loại văn bản, tóm tắt, chấm điểm xác suất) thay vì công thức cứng. |
+| **`query_model(...)`** | Hàm dựng sẵn trong AIDP cho phép gọi trực tiếp các mô hình LLM từ `default.oci_ai_models` ngay bên trong câu lệnh **SQL** hoặc **PySpark** để xử lý hàng loạt dòng dữ liệu. |
+| **MLflow** | Nền tảng mã nguồn mở tích hợp sẵn trong AIDP để quản lý vòng đời Machine Learning: ghi lại từng lần huấn luyện (**Runs**), chỉ số đánh giá (**Metrics**), tham số (**Parameters**), file kết quả (**Artifacts**) và lưu phiên bản mô hình. |
+| **Model Registry** | **Sổ đăng ký mô hình** (nằm trong Master Catalog → `Models`): nơi lưu chính thức các mô hình ML đã đạt chuẩn kèm lịch sử phiên bản (*Versions*) để các Notebook/Workflow khác tải ra dùng. |
+| **AUC (Area Under the Curve)** | Một chỉ số phổ biến đo độ chính xác của mô hình phân loại Machine Learning (càng gần `1.0` mô hình phân biệt đúng/sai càng giỏi). |
+| **Scoring (Model Scoring)** | Dùng mô hình ML đã huấn luyện để **chấm điểm / dự đoán** trên dữ liệu thực tế mới (ví dụ: chấm xác suất một khoản chi có cần nhân viên duyệt tay hay không). |
+| **Edge Cases** | **Trường hợp biên / ngoại lệ**: Những mẫu dữ liệu khó, bất thường hoặc nằm sát ranh giới quy định — bắt buộc phải đưa vào tập test khi kiểm định prompt LLM. |
+| **High-Concurrency Serving Layer** | **Lớp phục vụ truy vấn đồng thời cao**: Nơi xuất bản bảng Gold cuối cùng (như Oracle Autonomous AI Lakehouse) để hàng trăm người dùng BI và AI Agent cùng truy vấn nhanh mà không bị nghẽn. |
+
+---
+
+## Module 6: Automate Data Processing
+
+| Thuật ngữ | Nghĩa / Giải thích dễ hiểu cho người mới |
+|---|---|
+| **Workflow / Job** | **Luồng công việc tự động**: Một **Job** (file `.job`) gom một hoặc nhiều bước (**Tasks**) chạy theo thứ tự/điều kiện nhất định để tự động hóa pipeline dữ liệu. |
+| **Task** | **Một bước thực thi** bên trong Job. AIDP có 5 loại: **Notebook task**, **Python task**, **JAR task** *(gói code Java/Scala)*, **If-else condition** *(rẽ nhánh điều kiện)*, và **Nested job task** *(gọi một Job khác làm bước con)*. |
+| **Nested Job Task** | Một Task đặc biệt dùng để **gọi cả một Job độc lập khác** — giúp phát triển/test riêng từng tầng Bronze, Silver, Gold rồi ghép lại thành một **Unified Workflow** duy nhất. |
+| **Job Run** | **Một lần chạy cụ thể** của Job, lưu lại trạng thái (`Success`, `Failed`, `Canceled`, `Timed out`), thời gian, đầu ra và log. |
+| **Trigger (Manual vs. Scheduled)** | **Cơ chế kích hoạt Job**: **Manual** là bấm chạy tay (`Run now`) để kiểm thử; **Scheduled** là tự động chạy định kỳ theo lịch. |
+| **Dependencies & `Run if`** | **Mối quan hệ phụ thuộc** quy định task nào phải chờ task nào xong (hoặc chạy song song nếu không phụ thuộc nhau), kèm điều kiện chạy (`Run if`, vd chỉ chạy khi bước trước thành công). |
+| **Parameter Precedence** | **Thứ tự ưu tiên tham số** khi cùng 1 key đặt ở nhiều nơi: **Job Run value (cao nhất) → Task value → Job value (thấp nhất)**. |
+| **`oidlutils.parameters.setTaskValue`** | Lệnh Python trong AIDP Notebook để xuất một giá trị (vd `model_accuracy`) ra làm tham số task, rồi task sau đọc lại bằng cú pháp `{{tasks.<task_name>.values.<param_name>}}`. |
+| **Cron Expression** | Chuỗi ký hiệu tiêu chuẩn (vd `0 0 * * 0`) dùng để hẹn giờ tự động chạy theo mọi chu kỳ linh hoạt, bên cạnh lịch chọn trực quan (**Calendar-based schedule**). |
+| **Execution Timeout & Retries** | **Execution timeout** là giới hạn thời gian chạy tối đa của task (1 phút – 48 giờ) tránh bị treo mãi; **Retries** là số lần tự động chạy lại nếu task lỗi (có tùy chọn `Retry on timeout`). |
+| **Repair Run** | Tính năng **chạy khôi phục thông minh**: chỉ chạy lại những task bị lỗi đã chọn thay vì chạy lại cả workflow từ đầu. Tham số truyền cho Repair Run chỉ áp dụng cho riêng lần sửa lỗi đó. |
+| **CI/CD & Runbooks** | **CI/CD** (*Continuous Integration / Continuous Deployment*) là quy trình tự động kiểm thử & triển khai code; **Runbooks** là kịch bản vận hành tự động — kết nối với AIDP qua **REST APIs, SDKs và CLI**. |
