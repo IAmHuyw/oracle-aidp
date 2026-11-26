@@ -41,3 +41,59 @@
 | **Agentic AI / AI Agent** | **AI tác tử**: Ứng dụng AI không chỉ trả lời chat mà còn có thể **tự tra cứu dữ liệu, đối chiếu quy định và dùng công cụ được cấp phép để thực hiện hành động** (ví dụ: phát hiện hóa đơn sai quy định và soạn email nhắc nhân viên). |
 | **Guardrails** | **Hàng rào an toàn cho AI**: Các quy tắc giới hạn để AI Agent không nói bậy, không tự ý thực hiện hành động vượt quyền hoặc làm lộ dữ liệu nhạy cảm. |
 | **RBAC (Role-Based Access Control)** | **Phân quyền theo vai trò**: Thay vì cấp quyền lẻ tẻ cho từng người, ta tạo các vai trò (ví dụ: Analyst, Engineer, Steward), gán quyền cho vai trò rồi gán người vào vai trò đó. *(Sẽ học sâu ở Module 3)* |
+
+---
+
+## Module 2: Provision an AIDP Instance
+
+| Thuật ngữ | Nghĩa / Giải thích dễ hiểu cho người mới |
+|---|---|
+| **Provisioning** | **Khởi tạo tài nguyên đám mây**: Quá trình cấu hình và tạo ra một hệ thống mới (instance) trên cloud để sẵn sàng sử dụng. |
+| **OCI (Oracle Cloud Infrastructure)** | Nền tảng điện toán đám mây của Oracle (tương tự AWS của Amazon hay Azure của Microsoft) — nơi AIDP chạy trên đó. |
+| **OCI IAM (Identity and Access Management)** | Hệ thống **quản lý danh tính và phân quyền** của OCI, gồm **Users** (người dùng), **Groups** (nhóm), **Policies** (chính sách quyền) và **Permissions** (quyền thao tác). |
+| **Tenancy** | **Tài khoản thuê bao đám mây tổng** của cả công ty/tổ chức trên OCI (cấp cao nhất, chứa mọi compartment bên trong). |
+| **Compartment** | **Ngăn chứa logic** trên OCI dùng để gom nhóm tài nguyên theo phòng ban/dự án và giới hạn ai được phép chạm vào tài nguyên nào. |
+| **Region** | **Khu vực địa lý** đặt trung tâm dữ liệu đám mây (ví dụ: Singapore, Tokyo, US East...) nơi tài nguyên của bạn được tạo ra. |
+| **Tags (Required Tags)** | **Nhãn phân loại** gắn lên tài nguyên cloud (ví dụ: tên dự án, trung tâm chi phí). Nếu compartment đặt luật bắt buộc có tag mà bạn bỏ trống thì sẽ không tạo được instance. |
+| **Workbench Instance** | Thể hiện hệ thống AIDP tổng thể được khởi tạo — môi trường bảo mật chung cho mọi hoạt động dữ liệu, phân tích và AI. |
+| **Initial / Default Workspace** | **Không gian làm việc đầu tiên** được tạo kèm khi khởi tạo instance, là nơi tổ chức notebooks, workflows và libraries của dự án. |
+| **Autonomous AI Lakehouse (ALH)** | Cơ sở dữ liệu Lakehouse tự quản trị tích hợp AI của Oracle. Kết nối ALH (bản mới hoặc có sẵn từ **26ai** trở lên) là điều kiện để mở khóa các tính năng **AI-native** trong AIDP. |
+| **AI-Native Capabilities** | Các tính năng AI cốt lõi tích hợp sâu trong nền tảng: **Knowledge Bases** *(cơ sở tri thức)*, **Agent Flows** *(luồng AI Agent)* và **AI Compute** *(tính toán cho AI)*. |
+| **Knowledge Base** | **Cơ sở tri thức**: Kho tài liệu/dữ liệu chuẩn hóa (như file chính sách công ty) mà AI Agent có thể tra cứu để trả lời chính xác dựa trên sự thật. |
+| **Encryption Key** | **Chìa khóa mã hóa**: Dùng để mã hóa dữ liệu lưu trữ nhằm ngăn kẻ gian đọc trộm nếu lộ file lưu trữ. |
+| **Oracle-Managed Key** | Khóa mã hóa do **Oracle tự tạo và tự quản lý** (mặc định, đơn giản nhất). |
+| **Customer-Managed Key** | Khóa mã hóa do **chính công ty bạn tự giữ và quản lý** qua OCI Vault — kiểm soát bảo mật cao hơn nhưng đi kèm trách nhiệm vận hành (mất/tắt khóa sẽ mất truy cập dữ liệu). |
+| **OCI Vault** | **Két sắt lưu khóa mã hóa** trên OCI giúp công ty tự quản lý chìa khóa bảo mật, xoay vòng khóa (*key rotation*) và theo dõi kiểm toán (*audit trail*). |
+| **Key Rotation** | **Xoay vòng khóa**: Thay khóa mã hóa định kỳ theo quy định bảo mật để giảm rủi ro nếu khóa cũ bị lộ. |
+| **Policy Scope (Standard vs. Advanced)** | **Phạm vi áp dụng chính sách quyền** khi khởi tạo AIDP: **Standard** áp dụng rộng ở cấp **Tenancy** (dễ dùng), còn **Advanced** giới hạn hẹp trong **Compartment** (kiểm soát chặt hơn). |
+| **Private Network** | **Mạng riêng nội bộ** không mở công khai ra Internet — thường cần bật thêm **Optional policies** để AIDP kết nối an toàn vào nguồn dữ liệu bên trong. |
+
+---
+
+## Module 3: Data Foundation, Catalogs, and Governance
+
+| Thuật ngữ | Nghĩa / Giải thích dễ hiểu cho người mới |
+|---|---|
+| **Master Catalog** | **Danh mục tổng** ở cấp cao nhất trong AIDP, là bản đồ chứa tất cả các Catalog (Standard & External) và tài sản dữ liệu được quản trị. |
+| **Standard Catalog** | Catalog mà **AIDP tự lưu trữ và quản lý trực tiếp** cả cấu trúc, tài sản (Tables, Volumes, Knowledge Bases, Models) lẫn metadata. |
+| **External Catalog** | Catalog kết nối tới dữ liệu nằm ở **hệ thống bên ngoài**; AIDP chỉ đồng bộ (*synchronize*) metadata để tìm kiếm & truy vấn mà **không copy dữ liệu** vào AIDP. |
+| **`OCI_AI_MODELS`** | **Schema dành riêng (reserved schema)** nằm sẵn trong `default` catalog, liệt kê các mô hình ngôn ngữ lớn nền tảng (*Foundation LLMs*) từ **OCI Generative AI** sẵn sàng để dùng trong AIDP. |
+| **Schema** | **Ngăn chứa con bên trong Catalog** giúp gom nhóm các tài sản dữ liệu và AI liên quan (Tables, Volumes, Knowledge Bases, Models) cho gọn gàng và dễ phân quyền. |
+| **Table (Managed vs. External)** | **Bảng dữ liệu có cấu trúc** (hàng & cột). **Managed Table** do AIDP lưu cả dữ liệu & metadata; **External Table** chỉ lưu metadata trỏ tới file trong OCI Object Storage. |
+| **Volume (Managed vs. External)** | **Kho chứa file và thư mục cho dữ liệu phi cấu trúc** (PDF, DOCX, TXT, ảnh...). **Managed Volume** do AIDP quản lý cả dữ liệu & metadata; **External Volume** chỉ quản lý metadata trỏ tới một Bucket/Folder sẵn có trên OCI Object Storage. |
+| **OCI Object Storage** | Dịch vụ lưu trữ file dạng đối tượng (tương tự ổ đĩa đám mây dung lượng cực lớn theo cấu trúc **Compartment → Bucket → Folder/File**) trên OCI. |
+| **Bucket** | "Thùng chứa" logic cấp cao nhất bên trong OCI Object Storage để đựng các file và thư mục. |
+| **Partition Key** | **Khóa phân vùng**: Cột dùng để chia nhỏ dữ liệu bảng theo nhóm (ví dụ theo ngày/tháng hoặc khu vực) giúp truy vấn nhanh hơn vì chỉ cần đọc đúng phần cần thiết. |
+| **RAG (Retrieval-Augmented Generation)** | Kỹ thuật cho AI **tra cứu tài liệu thật trước rồi mới trả lời** (giúp AI trả lời đúng theo chính sách công ty thay vì tự bịa). |
+| **Vector Embeddings** | **Biểu diễn vector số học**: Biến đoạn văn bản thành dãy số phản ánh *ý nghĩa* của câu chữ để máy tính tìm được đoạn văn có ý nghĩa tương đồng (**Semantic Search**). |
+| **Embedding Model** | Mô hình AI chuyên biến văn bản thành Vector Embeddings. Trong AIDP Demo có 2 lựa chọn: `ALL_MINILM_L12_V2` (chỉ tiếng Anh) và `MULTILINGUAL_E5_SMALL` (100 ngôn ngữ). |
+| **Chunk Size & Chunk Overlap** | Khi lập chỉ mục tài liệu cho Knowledge Base, văn bản dài được cắt thành từng mẩu nhỏ (**Chunk**). **Chunk size** là độ dài mỗi mẩu (tính theo ký tự); **Chunk overlap** là phần ký tự lặp chồng giữa 2 mẩu kế nhau để không bị đứt ý giữa chừng. |
+| **Auto Populate Catalog** | Công cụ **trích xuất metadata tự động** từ file trong OCI Object Storage (CSV, JSON, Avro, ORC, Parquet, Delta Lake) để tự tạo schemas, tables và partitions hàng loạt (có thể bật chế độ duyệt tay *Manual approval*). |
+| **Credential Store** | **Kho lưu trữ thông tin bí mật tập trung** (token, mật khẩu, tài khoản dịch vụ) trong AIDP giúp code & AI Agent xác thực an toàn mà **không dán cứng (hardcode)** bí mật trong code. |
+| **OCID (Oracle Cloud Identifier)** | Mã định danh dài và duy nhất do Oracle cấp cho mọi tài nguyên trên OCI (user, vault secret, bucket, instance...). |
+| **MCP Server (Model Context Protocol Server)** | Cầu nối chuẩn giúp **AI Agent** giao tiếp và gọi công cụ/dữ liệu từ hệ thống bên ngoài (như Oracle Analytics Cloud) một cách có kiểm soát. |
+| **System Roles (`AI_DATA_PLATFORM_ADMIN` & `AUDITOR`)** | 2 vai trò mặc định của hệ thống AIDP. `AI_DATA_PLATFORM_ADMIN` có toàn quyền quản trị và **chỉ 1 người duy nhất** được giữ tại một thời điểm; `AUDITOR` chỉ được xem Audit Logs. |
+| **Principal / Principal Type** | **Đối tượng được gán quyền hoặc thêm vào Role** — trong AIDP gồm 3 loại: **User** (người dùng lẻ), **Group** (nhóm OCI IAM), và **Role** (vai trò AIDP khác). |
+| **Hierarchical Inheritance** | **Kế thừa phân cấp**: Khi cấp quyền trên đối tượng cha (vd: Catalog), đối tượng con bên trong (vd: Table) tự động được thừa hưởng quyền đó. *(Lưu ý: Workspace, Folder và Compute là các cây phân quyền tách biệt!)* |
+| **Least-Privilege Access** | **Nguyên tắc đặc quyền tối thiểu**: Chỉ cấp cho mỗi vai trò/người dùng/AI Agent đúng lượng quyền tối thiểu cần để làm việc, không cấp thừa. |
+| **Notifications vs. Audit Logs** | **Notifications** báo kết quả tức thời các tác vụ vận hành (upload xong, job lỗi...); **Audit Logs** là nhật ký kiểm toán lưu dài hạn ghi rõ *ai thay đổi gì và kết quả ra sao*. |
