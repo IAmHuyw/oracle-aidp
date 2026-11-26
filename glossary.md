@@ -97,3 +97,28 @@
 | **Hierarchical Inheritance** | **Kế thừa phân cấp**: Khi cấp quyền trên đối tượng cha (vd: Catalog), đối tượng con bên trong (vd: Table) tự động được thừa hưởng quyền đó. *(Lưu ý: Workspace, Folder và Compute là các cây phân quyền tách biệt!)* |
 | **Least-Privilege Access** | **Nguyên tắc đặc quyền tối thiểu**: Chỉ cấp cho mỗi vai trò/người dùng/AI Agent đúng lượng quyền tối thiểu cần để làm việc, không cấp thừa. |
 | **Notifications vs. Audit Logs** | **Notifications** báo kết quả tức thời các tác vụ vận hành (upload xong, job lỗi...); **Audit Logs** là nhật ký kiểm toán lưu dài hạn ghi rõ *ai thay đổi gì và kết quả ra sao*. |
+
+---
+
+## Module 4: Create and Organize Workspaces and Compute Resources
+
+| Thuật ngữ | Nghĩa / Giải thích dễ hiểu cho người mới |
+|---|---|
+| **Workspace** | **Không gian làm việc dự án** — vùng chứa logic gom Files, Folders, Notebooks, Workflows, Jobs, Compute Clusters và Experiments của một dự án/nhóm. |
+| **Workspace Isolation** | **Cô lập không gian làm việc**: Tách biệt cả về mặt **vận hành** *(Operational: compute, jobs, logs, quotas không tranh chấp nhau)* lẫn **tổ chức** *(Organizational: team, phân quyền, vòng đời dev/test/prod)*. |
+| **Quota** | **Hạn mức tài nguyên** tối đa được phép dùng trong một workspace hoặc ngăn chứa để tránh một dự án ngốn hết tài nguyên chung. |
+| **VCN & Subnet** | **Virtual Cloud Network** *(mạng đám mây riêng ảo)* và **Subnet** *(mạng con)* trên OCI — cần khai báo nếu bật **Private Network** cho Workspace để nối tới nguồn dữ liệu nội bộ. |
+| **Compute Cluster** | **Cụm máy tính đa năng (All-purpose compute)** chạy Spark/CPU/GPU dùng cho hầu hết việc trong AIDP: chạy Notebooks, scripts, Workflows, Jobs, Knowledge Base ingestion và Auto-populate catalog. |
+| **Driver Node & Worker Nodes** | Trong cụm xử lý phân tán Spark: **Driver node** là "máy trưởng" điều phối công việc; **Worker nodes** là các "máy thợ" cùng xử lý dữ liệu song song. |
+| **OCPU (Oracle CPU)** | Đơn vị đo sức mạnh vi xử lý CPU trên Oracle Cloud (1 OCPU tương đương 1 nhân CPU vật lý hỗ trợ đa luồng). |
+| **Autoscale** | **Tự động co giãn tài nguyên**: Cluster tự tăng thêm số Worker nodes khi việc nặng và tự thu nhỏ lại (trong khoảng min–max) khi rảnh để tiết kiệm chi phí. |
+| **Idle Timeout** | **Thời gian chờ tự tắt khi rảnh**: Tự động tắt Compute Cluster nếu không có ai chạy tác vụ trong một khoảng thời gian (vd: 120 hoặc 180 phút) để tránh tốn tiền cloud. |
+| **Init Script** | **Kịch bản khởi tạo**: Đoạn script tự chạy mỗi khi Compute Cluster khởi động để cài đặt môi trường hoặc cấu hình nâng cao. |
+| **Spark UI** | Giao diện giám sát kỹ thuật của Apache Spark giúp theo dõi tiến độ chạy job, tác vụ nào đang chậm và tối ưu hiệu năng. |
+| **AI Compute** | **Tài nguyên tính toán chuyên biệt cho AI Agents** — chỉ dùng cho việc thử nghiệm (**Agent Playground**) và phục vụ AI Agent đã triển khai (**Deployed Agent Endpoints**). |
+| **Compute Replicas** | **Các bản sao tính toán**: Nhân bản thêm các bản sao của AI Compute để tăng sức chịu tải khi nhiều người dùng cùng gọi AI Agent một lúc. |
+| **Agent Playground** | Sân chơi thử nghiệm tương tác giúp lập trình viên chat, kiểm thử và tinh chỉnh AI Agent trước khi đưa ra chạy thực tế (production). |
+| **Endpoint (Deployed Agent Endpoint)** | Địa chỉ API/cổng kết nối ổn định để ứng dụng bên ngoài gọi và tương tác với AI Agent đã triển khai. |
+| **ML Experiment** | **Thí nghiệm Học máy**: Nơi ghi nhận và so sánh nhiều lần chạy huấn luyện mô hình (*training runs*) với thuật toán/dữ liệu khác nhau để chọn mô hình chuẩn nhất. |
+| **Git Folder** | Thư mục trong AIDP Workspace liên kết trực tiếp với một kho mã nguồn **Git** bên ngoài (GitHub, Bitbucket, GitLab, OCI DevOps) hỗ trợ `commit`, `push`, `pull`, `merge`. |
+| **Personal Access Token (PAT)** | **Mã thông báo truy cập cá nhân** (tạo trên GitHub/Git provider) dùng thay mật khẩu để cấp quyền cho AIDP kết nối và đồng bộ code an toàn với kho Git của bạn. |
