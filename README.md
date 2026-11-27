@@ -16,6 +16,7 @@
 | **Module 6** | Automate Data Processing *(Jobs, 5 Task Types, Parameter Precedence, If-Else, Calendar/Cron Scheduling, Repair Run)* | [module-06-workflows.md](./module-06-workflows.md) |
 | **Module 7** | Share and Integrate Data *(Delta Sharing, OAC Built-in Connector, JDBC/ODBC, Kafka Streaming, Oracle Fusion BICC)* | [module-07-share-integrate.md](./module-07-share-integrate.md) |
 | **Từ điển** | **Từ điển thuật ngữ tiếng Anh → tiếng Việt xuyên suốt cả 7 module** | [glossary.md](./glossary.md) |
+| **Thực hành** | **Hướng dẫn thực hành Hands-on từng bước theo Module (Module 2 → 7)** | [labs-by-module.md](./labs-by-module.md) |
 
 ---
 
