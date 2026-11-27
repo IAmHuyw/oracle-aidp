@@ -1,0 +1,6 @@
+username,role_name,branch_id,can_view_pii
+admin_vietabank,HO_ADMIN,ALL,1
+rm_hn01,BRANCH_RM,HN01,1
+rm_hcm01,BRANCH_RM,HCM01,1
+analyst_c360,DATA_ANALYST,ALL,0
+telesales_dn01,BRANCH_TELESALES,DN01,0

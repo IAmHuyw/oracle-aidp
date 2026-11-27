@@ -1,0 +1,316 @@
+interaction_id,cif,interaction_date,channel,purpose,notes,branch_id,department_id,portfolio_id,source_system
+700001,200001,2026-10-12,Ứng dụng VietABank EzMobile,Chăm sóc định kỳ,"Khách hàng giao dịch ổn định, số dư tiền gửi tăng đều, chưa sở hữu thẻ tín dụng quốc tế.",HN01,D01,PF001,CRM
+700002,200001,2026-11-20,Chi nhánh / PGD,Tư vấn sản phẩm,"[CAMPAIGN:NBO_VISA_PLATINUM | STAGE:IN_PROGRESS] RM đang tư vấn mở Thẻ tín dụng Quốc tế VietABank Visa Platinum (hạn mức đề xuất 200 triệu VND). Khách hàng quan tâm, hẹn gọi lại ngày 27/11 để chốt hồ sơ.",HN01,D01,PF001,CRM
+700003,200001,2026-11-25,Tổng đài CSKH 1900 555 590,Sự cố nuốt thẻ ATM - ĐANG XỬ LÝ,[TICKET:TS-20261125-001 | INCIDENT:ATM_CARD_RETAINED | STATUS:OPEN | SEVERITY:HIGH] Khách hàng bị nuốt thẻ VietABank Debit Nội địa Vàng (9704****8821) tại cây ATM VietABank Hoàn Kiếm do lỗi kỹ thuật. Tổng đài đã khóa thẻ khẩn cấp và lập phiếu tra soát hẹn trả/cấp lại thẻ miễn phí trong 3-5 ngày làm việc. BẮT BUỘC TẠM DỪNG MỌI CUỘC GỌI BÁN HÀNG (SUPPRESS NBO) cho tới khi xử lý xong và qua thời gian hạ nhiệt 48 giờ.,HN01,D01,PF001,CRM
+700004,200002,2026-09-18,Ứng dụng VietABank EzMobile,Chăm sóc định kỳ,"Khách hàng Priority giao dịch chuyển khoản và mua sắm trực tuyến thường xuyên, đánh giá 5 sao chất lượng ứng dụng.",HCM01,D03,PF003,CRM
+700005,200002,2026-11-10,Tổng đài CSKH 1900 555 590,Tư vấn sản phẩm,Khách hàng hỏi về biểu lãi suất tái tục sổ tiết kiệm 2.5 tỷ VND sắp đáo hạn ngày 07/12/2026 và hỏi thêm về ưu đãi chi tiêu nước ngoài dịp cuối năm.,HCM01,D03,PF003,CRM
+700006,200002,2026-11-22,Email,Tư vấn sản phẩm,"Khách hàng mở email giới thiệu đặc quyền khách hàng Priority VietABank (chưa có thẻ tín dụng quốc tế, không có khiếu nại hay sự cố mở).",HCM01,D03,PF003,DWH
+700007,200003,2026-11-15,Chi nhánh / PGD,Tư vấn sản phẩm,"[CAMPAIGN:NBO_VISA_PLATINUM | STAGE:PAUSED] RM tư vấn mở thẻ tín dụng VietABank Visa Platinum, khách đồng ý tìm hiểu.",HN01,D01,PF001,CRM
+700008,200003,2026-11-18,Tổng đài CSKH 1900 555 590,Sự cố nuốt thẻ ATM - ĐÃ XỬ LÝ,[TICKET:TS-20261118-009 | INCIDENT:ATM_CARD_RETAINED | STATUS:CLOSED | RESOLVED_DATE:2026-11-22] Đã cấp lại thẻ miễn phí và bàn giao cho khách hàng ngày 22/11/2026. Khách hàng xác nhận hài lòng.,HN01,D01,PF001,CRM
+700009,200003,2026-11-23,Tổng đài CSKH 1900 555 590,Chăm sóc sau sự cố,"[TICKET:TS-20261118-009 | STATUS:RESOLVED | COOLING_OFF_PASSED:TRUE] Đã qua hơn 48 giờ từ khi đóng sự cố, đủ điều kiện mở lại chiến dịch tư vấn NBO và gọi hỏi thăm khách hàng.",HN01,D01,PF001,CRM
+700010,200004,2026-07-01,Tổng đài CSKH 1900 555 590,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,HCM02,D04,PF004,CRM
+700011,200004,2026-03-04,Email,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,HCM02,D04,PF004,CRM
+700012,200004,2026-03-10,Ứng dụng VietABank EzMobile,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,HCM02,D04,PF004,DWH
+700013,200004,2026-07-20,Ứng dụng VietABank EzMobile,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,HCM02,D04,PF004,DWH
+700014,200004,2026-11-24,Tổng đài CSKH 1900 555 590,Sự cố nuốt thẻ ATM - ĐANG XỬ LÝ,"[TICKET:TS-20261125-004 | INCIDENT:ATM_CARD_RETAINED | STATUS:OPEN | SEVERITY:HIGH] Khách hàng bị nuốt thẻ tại cây ATM. Đã khóa thẻ khẩn cấp, đang chờ hoàn tất cấp lại thẻ trong 3-5 ngày làm việc. Tạm dừng chào bán sản phẩm.",HCM02,D04,PF004,CRM
+700015,200005,2025-11-07,Tổng đài CSKH 1900 555 590,Yêu cầu sao kê,Khách hàng yêu cầu sao kê tài khoản 6 tháng gần nhất — đã hỗ trợ hoàn tất.,HCM02,D04,PF004,DWH
+700016,200005,2026-07-08,Email,Chăm sóc định kỳ,"RM gọi hỏi thăm trải nghiệm sử dụng dịch vụ, khách hàng hài lòng.",HCM02,D04,PF004,DWH
+700017,200005,2026-01-28,Internet Banking,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,HCM02,D04,PF004,CRM
+700018,200005,2026-11-25,Tổng đài CSKH 1900 555 590,Sự cố nuốt thẻ ATM - ĐANG XỬ LÝ,"[TICKET:TS-20261125-005 | INCIDENT:ATM_CARD_RETAINED | STATUS:OPEN | SEVERITY:HIGH] Khách hàng bị nuốt thẻ tại cây ATM. Đã khóa thẻ khẩn cấp, đang chờ hoàn tất cấp lại thẻ trong 3-5 ngày làm việc. Tạm dừng chào bán sản phẩm.",HCM02,D04,PF004,CRM
+700019,200006,2026-10-18,Chi nhánh / PGD,Tra cứu biểu phí,Khách hàng hỏi biểu phí chuyển tiền quốc tế và thẻ Visa — đã giải đáp.,CT01,D05,PF006,CRM
+700020,200006,2026-06-14,Internet Banking,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,CT01,D05,PF006,DWH
+700021,200006,2026-07-31,Internet Banking,Tra cứu biểu phí,Khách hàng hỏi biểu phí chuyển tiền quốc tế và thẻ Visa — đã giải đáp.,CT01,D05,PF006,DWH
+700022,200006,2026-01-08,Tổng đài CSKH 1900 555 590,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,CT01,D05,PF006,DWH
+700023,200006,2026-11-26,Tổng đài CSKH 1900 555 590,Sự cố nuốt thẻ ATM - ĐANG XỬ LÝ,"[TICKET:TS-20261125-006 | INCIDENT:ATM_CARD_RETAINED | STATUS:OPEN | SEVERITY:HIGH] Khách hàng bị nuốt thẻ tại cây ATM. Đã khóa thẻ khẩn cấp, đang chờ hoàn tất cấp lại thẻ trong 3-5 ngày làm việc. Tạm dừng chào bán sản phẩm.",CT01,D05,PF006,CRM
+700024,200007,2025-11-12,Ứng dụng VietABank EzMobile,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,DN01,D05,PF005,CRM
+700025,200007,2026-09-24,Email,Yêu cầu sao kê,Khách hàng yêu cầu sao kê tài khoản 6 tháng gần nhất — đã hỗ trợ hoàn tất.,DN01,D05,PF005,CRM
+700026,200007,2025-11-24,Ứng dụng VietABank EzMobile,Yêu cầu sao kê,Khách hàng yêu cầu sao kê tài khoản 6 tháng gần nhất — đã hỗ trợ hoàn tất.,DN01,D05,PF005,CRM
+700027,200007,2025-12-11,Email,Yêu cầu sao kê,Khách hàng yêu cầu sao kê tài khoản 6 tháng gần nhất — đã hỗ trợ hoàn tất.,DN01,D05,PF005,CRM
+700028,200007,2026-11-23,Tổng đài CSKH 1900 555 590,Khiếu nại tra soát giao dịch - ĐANG XỬ LÝ,[TICKET:TS-20261124-007 | INCIDENT:DISPUTE_TXN | STATUS:OPEN | SEVERITY:HIGH] Khách hàng phản ánh rút tiền ATM không nhả tiền nhưng bị trừ tài khoản. Đang phối hợp NAPAS tra soát. Tạm dừng chào bán sản phẩm.,DN01,D05,PF005,CRM
+700029,200008,2025-12-15,Internet Banking,Chăm sóc định kỳ,"RM gọi hỏi thăm trải nghiệm sử dụng dịch vụ, khách hàng hài lòng.",HN01,D01,PF001,DWH
+700030,200008,2026-08-11,Ứng dụng VietABank EzMobile,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,HN01,D01,PF001,CRM
+700031,200008,2026-11-26,Tổng đài CSKH 1900 555 590,Khiếu nại tra soát giao dịch - ĐANG XỬ LÝ,[TICKET:TS-20261124-008 | INCIDENT:DISPUTE_TXN | STATUS:OPEN | SEVERITY:HIGH] Khách hàng phản ánh rút tiền ATM không nhả tiền nhưng bị trừ tài khoản. Đang phối hợp NAPAS tra soát. Tạm dừng chào bán sản phẩm.,HN01,D01,PF001,CRM
+700032,200009,2026-10-23,Internet Banking,Yêu cầu sao kê,Khách hàng yêu cầu sao kê tài khoản 6 tháng gần nhất — đã hỗ trợ hoàn tất.,DN01,D05,PF005,CRM
+700033,200009,2026-03-04,Internet Banking,Tra cứu biểu phí,Khách hàng hỏi biểu phí chuyển tiền quốc tế và thẻ Visa — đã giải đáp.,DN01,D05,PF005,CRM
+700034,200009,2026-09-04,Internet Banking,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,DN01,D05,PF005,CRM
+700035,200009,2026-09-07,Chi nhánh / PGD,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,DN01,D05,PF005,CRM
+700036,200009,2026-11-26,Tổng đài CSKH 1900 555 590,Khiếu nại tra soát giao dịch - ĐANG XỬ LÝ,[TICKET:TS-20261124-009 | INCIDENT:DISPUTE_TXN | STATUS:OPEN | SEVERITY:HIGH] Khách hàng phản ánh rút tiền ATM không nhả tiền nhưng bị trừ tài khoản. Đang phối hợp NAPAS tra soát. Tạm dừng chào bán sản phẩm.,DN01,D05,PF005,CRM
+700037,200010,2026-02-22,Chi nhánh / PGD,Tra cứu biểu phí,Khách hàng hỏi biểu phí chuyển tiền quốc tế và thẻ Visa — đã giải đáp.,HN01,D01,PF001,DWH
+700038,200010,2026-10-26,Ứng dụng VietABank EzMobile,Yêu cầu sao kê,Khách hàng yêu cầu sao kê tài khoản 6 tháng gần nhất — đã hỗ trợ hoàn tất.,HN01,D01,PF001,CRM
+700039,200010,2026-06-03,Chi nhánh / PGD,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,HN01,D01,PF001,CRM
+700040,200011,2026-10-16,Internet Banking,Tra cứu biểu phí,Khách hàng hỏi biểu phí chuyển tiền quốc tế và thẻ Visa — đã giải đáp.,HN01,D01,PF001,CRM
+700041,200011,2026-06-04,Internet Banking,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,HN01,D01,PF001,CRM
+700042,200011,2025-11-05,Email,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,HN01,D01,PF001,DWH
+700043,200012,2026-07-28,Chi nhánh / PGD,Yêu cầu sao kê,Khách hàng yêu cầu sao kê tài khoản 6 tháng gần nhất — đã hỗ trợ hoàn tất.,DN01,D05,PF005,CRM
+700044,200012,2025-12-10,Email,Chăm sóc định kỳ,"RM gọi hỏi thăm trải nghiệm sử dụng dịch vụ, khách hàng hài lòng.",DN01,D05,PF005,DWH
+700045,200012,2026-01-15,Internet Banking,Tra cứu biểu phí,Khách hàng hỏi biểu phí chuyển tiền quốc tế và thẻ Visa — đã giải đáp.,DN01,D05,PF005,CRM
+700046,200012,2026-09-09,Tổng đài CSKH 1900 555 590,Tra cứu biểu phí,Khách hàng hỏi biểu phí chuyển tiền quốc tế và thẻ Visa — đã giải đáp.,DN01,D05,PF005,CRM
+700047,200013,2026-09-06,Tổng đài CSKH 1900 555 590,Chăm sóc định kỳ,"RM gọi hỏi thăm trải nghiệm sử dụng dịch vụ, khách hàng hài lòng.",CT01,D05,PF006,CRM
+700048,200013,2025-11-26,Internet Banking,Yêu cầu sao kê,Khách hàng yêu cầu sao kê tài khoản 6 tháng gần nhất — đã hỗ trợ hoàn tất.,CT01,D05,PF006,CRM
+700049,200013,2026-07-13,Chi nhánh / PGD,Yêu cầu sao kê,Khách hàng yêu cầu sao kê tài khoản 6 tháng gần nhất — đã hỗ trợ hoàn tất.,CT01,D05,PF006,DWH
+700050,200013,2026-10-22,Internet Banking,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,CT01,D05,PF006,CRM
+700051,200014,2026-05-07,Internet Banking,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,CT01,D05,PF006,DWH
+700052,200014,2026-07-02,Ứng dụng VietABank EzMobile,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,CT01,D05,PF006,CRM
+700053,200014,2026-06-22,Chi nhánh / PGD,Chăm sóc định kỳ,"RM gọi hỏi thăm trải nghiệm sử dụng dịch vụ, khách hàng hài lòng.",CT01,D05,PF006,CRM
+700054,200015,2026-09-24,Ứng dụng VietABank EzMobile,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,HN01,D01,PF001,DWH
+700055,200015,2026-01-09,Tổng đài CSKH 1900 555 590,Yêu cầu sao kê,Khách hàng yêu cầu sao kê tài khoản 6 tháng gần nhất — đã hỗ trợ hoàn tất.,HN01,D01,PF001,DWH
+700056,200015,2026-02-25,Tổng đài CSKH 1900 555 590,Yêu cầu sao kê,Khách hàng yêu cầu sao kê tài khoản 6 tháng gần nhất — đã hỗ trợ hoàn tất.,HN01,D01,PF001,DWH
+700057,200015,2026-08-04,Internet Banking,Tra cứu biểu phí,Khách hàng hỏi biểu phí chuyển tiền quốc tế và thẻ Visa — đã giải đáp.,HN01,D01,PF001,CRM
+700058,200016,2026-05-19,Ứng dụng VietABank EzMobile,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,HN01,D01,PF001,CRM
+700059,200016,2026-08-09,Tổng đài CSKH 1900 555 590,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,HN01,D01,PF001,DWH
+700060,200016,2026-01-24,Chi nhánh / PGD,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,HN01,D01,PF001,DWH
+700061,200017,2025-11-12,Internet Banking,Chăm sóc định kỳ,"RM gọi hỏi thăm trải nghiệm sử dụng dịch vụ, khách hàng hài lòng.",DN01,D05,PF005,CRM
+700062,200017,2026-06-01,Ứng dụng VietABank EzMobile,Tra cứu biểu phí,Khách hàng hỏi biểu phí chuyển tiền quốc tế và thẻ Visa — đã giải đáp.,DN01,D05,PF005,CRM
+700063,200018,2026-10-10,Tổng đài CSKH 1900 555 590,Tra cứu biểu phí,Khách hàng hỏi biểu phí chuyển tiền quốc tế và thẻ Visa — đã giải đáp.,HCM02,D04,PF004,DWH
+700064,200018,2026-11-11,Internet Banking,Tra cứu biểu phí,Khách hàng hỏi biểu phí chuyển tiền quốc tế và thẻ Visa — đã giải đáp.,HCM02,D04,PF004,DWH
+700065,200019,2026-10-20,Email,Chăm sóc định kỳ,"RM gọi hỏi thăm trải nghiệm sử dụng dịch vụ, khách hàng hài lòng.",HN02,D02,PF002,DWH
+700066,200019,2026-10-05,Chi nhánh / PGD,Chăm sóc định kỳ,"RM gọi hỏi thăm trải nghiệm sử dụng dịch vụ, khách hàng hài lòng.",HN02,D02,PF002,DWH
+700067,200019,2026-01-16,Chi nhánh / PGD,Chăm sóc định kỳ,"RM gọi hỏi thăm trải nghiệm sử dụng dịch vụ, khách hàng hài lòng.",HN02,D02,PF002,DWH
+700068,200019,2026-03-17,Internet Banking,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,HN02,D02,PF002,CRM
+700069,200020,2026-11-01,Chi nhánh / PGD,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,DN01,D05,PF005,DWH
+700070,200020,2026-11-05,Internet Banking,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,DN01,D05,PF005,CRM
+700071,200020,2026-10-19,Email,Tra cứu biểu phí,Khách hàng hỏi biểu phí chuyển tiền quốc tế và thẻ Visa — đã giải đáp.,DN01,D05,PF005,DWH
+700072,200021,2026-01-30,Email,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,HN02,D02,PF002,CRM
+700073,200021,2025-12-12,Tổng đài CSKH 1900 555 590,Yêu cầu sao kê,Khách hàng yêu cầu sao kê tài khoản 6 tháng gần nhất — đã hỗ trợ hoàn tất.,HN02,D02,PF002,DWH
+700074,200022,2026-01-08,Tổng đài CSKH 1900 555 590,Tra cứu biểu phí,Khách hàng hỏi biểu phí chuyển tiền quốc tế và thẻ Visa — đã giải đáp.,HN01,D01,PF001,DWH
+700075,200022,2026-11-13,Tổng đài CSKH 1900 555 590,Yêu cầu sao kê,Khách hàng yêu cầu sao kê tài khoản 6 tháng gần nhất — đã hỗ trợ hoàn tất.,HN01,D01,PF001,CRM
+700076,200022,2025-11-27,Ứng dụng VietABank EzMobile,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,HN01,D01,PF001,DWH
+700077,200022,2026-01-17,Chi nhánh / PGD,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,HN01,D01,PF001,CRM
+700078,200023,2026-01-22,Chi nhánh / PGD,Tra cứu biểu phí,Khách hàng hỏi biểu phí chuyển tiền quốc tế và thẻ Visa — đã giải đáp.,DN01,D05,PF005,CRM
+700079,200023,2026-01-20,Chi nhánh / PGD,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,DN01,D05,PF005,DWH
+700080,200024,2026-07-14,Ứng dụng VietABank EzMobile,Tra cứu biểu phí,Khách hàng hỏi biểu phí chuyển tiền quốc tế và thẻ Visa — đã giải đáp.,DN01,D05,PF005,DWH
+700081,200024,2025-12-10,Tổng đài CSKH 1900 555 590,Yêu cầu sao kê,Khách hàng yêu cầu sao kê tài khoản 6 tháng gần nhất — đã hỗ trợ hoàn tất.,DN01,D05,PF005,CRM
+700082,200024,2026-05-19,Internet Banking,Yêu cầu sao kê,Khách hàng yêu cầu sao kê tài khoản 6 tháng gần nhất — đã hỗ trợ hoàn tất.,DN01,D05,PF005,CRM
+700083,200024,2026-01-15,Email,Tra cứu biểu phí,Khách hàng hỏi biểu phí chuyển tiền quốc tế và thẻ Visa — đã giải đáp.,DN01,D05,PF005,DWH
+700084,200025,2026-10-28,Ứng dụng VietABank EzMobile,Tra cứu biểu phí,Khách hàng hỏi biểu phí chuyển tiền quốc tế và thẻ Visa — đã giải đáp.,DN01,D05,PF005,DWH
+700085,200025,2026-04-25,Email,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,DN01,D05,PF005,DWH
+700086,200025,2026-03-06,Internet Banking,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,DN01,D05,PF005,DWH
+700087,200025,2025-11-17,Email,Chăm sóc định kỳ,"RM gọi hỏi thăm trải nghiệm sử dụng dịch vụ, khách hàng hài lòng.",DN01,D05,PF005,DWH
+700088,200026,2026-06-24,Tổng đài CSKH 1900 555 590,Tra cứu biểu phí,Khách hàng hỏi biểu phí chuyển tiền quốc tế và thẻ Visa — đã giải đáp.,HN01,D01,PF001,DWH
+700089,200026,2026-06-21,Ứng dụng VietABank EzMobile,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,HN01,D01,PF001,CRM
+700090,200026,2025-11-08,Chi nhánh / PGD,Tra cứu biểu phí,Khách hàng hỏi biểu phí chuyển tiền quốc tế và thẻ Visa — đã giải đáp.,HN01,D01,PF001,CRM
+700091,200026,2026-10-05,Email,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,HN01,D01,PF001,DWH
+700092,200027,2026-06-20,Tổng đài CSKH 1900 555 590,Tra cứu biểu phí,Khách hàng hỏi biểu phí chuyển tiền quốc tế và thẻ Visa — đã giải đáp.,CT01,D05,PF006,CRM
+700093,200027,2025-11-23,Email,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,CT01,D05,PF006,CRM
+700094,200027,2026-01-24,Ứng dụng VietABank EzMobile,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,CT01,D05,PF006,CRM
+700095,200028,2026-07-02,Email,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,DN01,D05,PF005,CRM
+700096,200028,2026-01-27,Ứng dụng VietABank EzMobile,Chăm sóc định kỳ,"RM gọi hỏi thăm trải nghiệm sử dụng dịch vụ, khách hàng hài lòng.",DN01,D05,PF005,CRM
+700097,200028,2026-02-01,Tổng đài CSKH 1900 555 590,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,DN01,D05,PF005,DWH
+700098,200029,2026-02-24,Email,Yêu cầu sao kê,Khách hàng yêu cầu sao kê tài khoản 6 tháng gần nhất — đã hỗ trợ hoàn tất.,HN02,D02,PF002,CRM
+700099,200029,2026-08-28,Tổng đài CSKH 1900 555 590,Chăm sóc định kỳ,"RM gọi hỏi thăm trải nghiệm sử dụng dịch vụ, khách hàng hài lòng.",HN02,D02,PF002,CRM
+700100,200029,2026-06-29,Email,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,HN02,D02,PF002,DWH
+700101,200030,2026-09-15,Email,Tra cứu biểu phí,Khách hàng hỏi biểu phí chuyển tiền quốc tế và thẻ Visa — đã giải đáp.,HCM01,D03,PF003,CRM
+700102,200030,2026-05-30,Ứng dụng VietABank EzMobile,Chăm sóc định kỳ,"RM gọi hỏi thăm trải nghiệm sử dụng dịch vụ, khách hàng hài lòng.",HCM01,D03,PF003,DWH
+700103,200030,2025-11-13,Chi nhánh / PGD,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,HCM01,D03,PF003,DWH
+700104,200030,2026-07-18,Ứng dụng VietABank EzMobile,Chăm sóc định kỳ,"RM gọi hỏi thăm trải nghiệm sử dụng dịch vụ, khách hàng hài lòng.",HCM01,D03,PF003,CRM
+700105,200031,2026-09-30,Internet Banking,Yêu cầu sao kê,Khách hàng yêu cầu sao kê tài khoản 6 tháng gần nhất — đã hỗ trợ hoàn tất.,HN02,D02,PF002,CRM
+700106,200031,2026-10-19,Chi nhánh / PGD,Yêu cầu sao kê,Khách hàng yêu cầu sao kê tài khoản 6 tháng gần nhất — đã hỗ trợ hoàn tất.,HN02,D02,PF002,CRM
+700107,200031,2026-11-02,Internet Banking,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,HN02,D02,PF002,DWH
+700108,200031,2026-04-22,Chi nhánh / PGD,Tra cứu biểu phí,Khách hàng hỏi biểu phí chuyển tiền quốc tế và thẻ Visa — đã giải đáp.,HN02,D02,PF002,CRM
+700109,200032,2026-08-06,Internet Banking,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,HN01,D01,PF001,DWH
+700110,200032,2026-10-13,Chi nhánh / PGD,Tra cứu biểu phí,Khách hàng hỏi biểu phí chuyển tiền quốc tế và thẻ Visa — đã giải đáp.,HN01,D01,PF001,DWH
+700111,200032,2026-09-16,Tổng đài CSKH 1900 555 590,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,HN01,D01,PF001,DWH
+700112,200032,2026-10-17,Internet Banking,Tra cứu biểu phí,Khách hàng hỏi biểu phí chuyển tiền quốc tế và thẻ Visa — đã giải đáp.,HN01,D01,PF001,DWH
+700113,200033,2026-01-08,Tổng đài CSKH 1900 555 590,Chăm sóc định kỳ,"RM gọi hỏi thăm trải nghiệm sử dụng dịch vụ, khách hàng hài lòng.",HN01,D01,PF001,CRM
+700114,200033,2025-11-06,Ứng dụng VietABank EzMobile,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,HN01,D01,PF001,DWH
+700115,200033,2026-06-13,Chi nhánh / PGD,Chăm sóc định kỳ,"RM gọi hỏi thăm trải nghiệm sử dụng dịch vụ, khách hàng hài lòng.",HN01,D01,PF001,CRM
+700116,200034,2025-12-07,Tổng đài CSKH 1900 555 590,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,HCM02,D04,PF004,DWH
+700117,200034,2026-05-20,Email,Chăm sóc định kỳ,"RM gọi hỏi thăm trải nghiệm sử dụng dịch vụ, khách hàng hài lòng.",HCM02,D04,PF004,CRM
+700118,200035,2025-12-03,Chi nhánh / PGD,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,HN01,D01,PF001,CRM
+700119,200035,2026-11-10,Chi nhánh / PGD,Yêu cầu sao kê,Khách hàng yêu cầu sao kê tài khoản 6 tháng gần nhất — đã hỗ trợ hoàn tất.,HN01,D01,PF001,CRM
+700120,200035,2026-03-23,Internet Banking,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,HN01,D01,PF001,DWH
+700121,200036,2026-01-26,Ứng dụng VietABank EzMobile,Tra cứu biểu phí,Khách hàng hỏi biểu phí chuyển tiền quốc tế và thẻ Visa — đã giải đáp.,HCM01,D03,PF003,CRM
+700122,200036,2026-06-12,Ứng dụng VietABank EzMobile,Tra cứu biểu phí,Khách hàng hỏi biểu phí chuyển tiền quốc tế và thẻ Visa — đã giải đáp.,HCM01,D03,PF003,CRM
+700123,200036,2026-01-12,Chi nhánh / PGD,Chăm sóc định kỳ,"RM gọi hỏi thăm trải nghiệm sử dụng dịch vụ, khách hàng hài lòng.",HCM01,D03,PF003,DWH
+700124,200036,2026-07-03,Chi nhánh / PGD,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,HCM01,D03,PF003,DWH
+700125,200037,2026-03-05,Tổng đài CSKH 1900 555 590,Yêu cầu sao kê,Khách hàng yêu cầu sao kê tài khoản 6 tháng gần nhất — đã hỗ trợ hoàn tất.,HCM01,D03,PF003,DWH
+700126,200037,2026-06-04,Ứng dụng VietABank EzMobile,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,HCM01,D03,PF003,CRM
+700127,200037,2026-11-09,Internet Banking,Yêu cầu sao kê,Khách hàng yêu cầu sao kê tài khoản 6 tháng gần nhất — đã hỗ trợ hoàn tất.,HCM01,D03,PF003,DWH
+700128,200037,2026-03-25,Chi nhánh / PGD,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,HCM01,D03,PF003,CRM
+700129,200038,2025-11-16,Ứng dụng VietABank EzMobile,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,HCM01,D03,PF003,CRM
+700130,200038,2026-06-17,Tổng đài CSKH 1900 555 590,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,HCM01,D03,PF003,DWH
+700131,200038,2026-05-02,Tổng đài CSKH 1900 555 590,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,HCM01,D03,PF003,DWH
+700132,200038,2026-10-26,Tổng đài CSKH 1900 555 590,Tra cứu biểu phí,Khách hàng hỏi biểu phí chuyển tiền quốc tế và thẻ Visa — đã giải đáp.,HCM01,D03,PF003,CRM
+700133,200039,2026-09-11,Ứng dụng VietABank EzMobile,Chăm sóc định kỳ,"RM gọi hỏi thăm trải nghiệm sử dụng dịch vụ, khách hàng hài lòng.",HN02,D02,PF002,CRM
+700134,200039,2026-01-26,Ứng dụng VietABank EzMobile,Yêu cầu sao kê,Khách hàng yêu cầu sao kê tài khoản 6 tháng gần nhất — đã hỗ trợ hoàn tất.,HN02,D02,PF002,CRM
+700135,200039,2026-10-23,Chi nhánh / PGD,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,HN02,D02,PF002,CRM
+700136,200039,2025-12-19,Internet Banking,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,HN02,D02,PF002,CRM
+700137,200040,2026-03-29,Ứng dụng VietABank EzMobile,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,HCM02,D04,PF004,DWH
+700138,200040,2026-09-25,Tổng đài CSKH 1900 555 590,Tra cứu biểu phí,Khách hàng hỏi biểu phí chuyển tiền quốc tế và thẻ Visa — đã giải đáp.,HCM02,D04,PF004,CRM
+700139,200041,2026-02-02,Tổng đài CSKH 1900 555 590,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,CT01,D05,PF006,DWH
+700140,200041,2026-03-12,Ứng dụng VietABank EzMobile,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,CT01,D05,PF006,DWH
+700141,200042,2026-08-25,Email,Yêu cầu sao kê,Khách hàng yêu cầu sao kê tài khoản 6 tháng gần nhất — đã hỗ trợ hoàn tất.,HCM02,D04,PF004,CRM
+700142,200042,2026-03-27,Email,Tra cứu biểu phí,Khách hàng hỏi biểu phí chuyển tiền quốc tế và thẻ Visa — đã giải đáp.,HCM02,D04,PF004,DWH
+700143,200043,2026-07-13,Chi nhánh / PGD,Yêu cầu sao kê,Khách hàng yêu cầu sao kê tài khoản 6 tháng gần nhất — đã hỗ trợ hoàn tất.,HN01,D01,PF001,DWH
+700144,200043,2026-08-02,Internet Banking,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,HN01,D01,PF001,CRM
+700145,200043,2026-07-29,Internet Banking,Chăm sóc định kỳ,"RM gọi hỏi thăm trải nghiệm sử dụng dịch vụ, khách hàng hài lòng.",HN01,D01,PF001,CRM
+700146,200044,2026-02-06,Chi nhánh / PGD,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,HCM01,D03,PF003,DWH
+700147,200044,2026-06-28,Internet Banking,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,HCM01,D03,PF003,DWH
+700148,200045,2026-08-24,Chi nhánh / PGD,Chăm sóc định kỳ,"RM gọi hỏi thăm trải nghiệm sử dụng dịch vụ, khách hàng hài lòng.",HCM01,D03,PF003,DWH
+700149,200045,2026-03-03,Ứng dụng VietABank EzMobile,Tra cứu biểu phí,Khách hàng hỏi biểu phí chuyển tiền quốc tế và thẻ Visa — đã giải đáp.,HCM01,D03,PF003,DWH
+700150,200045,2026-11-17,Email,Tra cứu biểu phí,Khách hàng hỏi biểu phí chuyển tiền quốc tế và thẻ Visa — đã giải đáp.,HCM01,D03,PF003,CRM
+700151,200045,2026-03-22,Email,Yêu cầu sao kê,Khách hàng yêu cầu sao kê tài khoản 6 tháng gần nhất — đã hỗ trợ hoàn tất.,HCM01,D03,PF003,DWH
+700152,200046,2026-11-05,Internet Banking,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,CT01,D05,PF006,DWH
+700153,200046,2026-02-06,Ứng dụng VietABank EzMobile,Yêu cầu sao kê,Khách hàng yêu cầu sao kê tài khoản 6 tháng gần nhất — đã hỗ trợ hoàn tất.,CT01,D05,PF006,CRM
+700154,200046,2026-02-01,Ứng dụng VietABank EzMobile,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,CT01,D05,PF006,DWH
+700155,200047,2026-06-15,Tổng đài CSKH 1900 555 590,Chăm sóc định kỳ,"RM gọi hỏi thăm trải nghiệm sử dụng dịch vụ, khách hàng hài lòng.",HCM02,D04,PF004,DWH
+700156,200047,2025-12-20,Email,Yêu cầu sao kê,Khách hàng yêu cầu sao kê tài khoản 6 tháng gần nhất — đã hỗ trợ hoàn tất.,HCM02,D04,PF004,DWH
+700157,200047,2026-04-17,Internet Banking,Chăm sóc định kỳ,"RM gọi hỏi thăm trải nghiệm sử dụng dịch vụ, khách hàng hài lòng.",HCM02,D04,PF004,DWH
+700158,200048,2026-06-25,Email,Yêu cầu sao kê,Khách hàng yêu cầu sao kê tài khoản 6 tháng gần nhất — đã hỗ trợ hoàn tất.,HN02,D02,PF002,DWH
+700159,200048,2026-10-23,Ứng dụng VietABank EzMobile,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,HN02,D02,PF002,CRM
+700160,200049,2026-07-24,Ứng dụng VietABank EzMobile,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,HCM02,D04,PF004,CRM
+700161,200049,2026-07-07,Email,Tra cứu biểu phí,Khách hàng hỏi biểu phí chuyển tiền quốc tế và thẻ Visa — đã giải đáp.,HCM02,D04,PF004,CRM
+700162,200049,2026-04-02,Tổng đài CSKH 1900 555 590,Chăm sóc định kỳ,"RM gọi hỏi thăm trải nghiệm sử dụng dịch vụ, khách hàng hài lòng.",HCM02,D04,PF004,CRM
+700163,200050,2026-03-17,Email,Yêu cầu sao kê,Khách hàng yêu cầu sao kê tài khoản 6 tháng gần nhất — đã hỗ trợ hoàn tất.,CT01,D05,PF006,DWH
+700164,200050,2026-06-14,Ứng dụng VietABank EzMobile,Yêu cầu sao kê,Khách hàng yêu cầu sao kê tài khoản 6 tháng gần nhất — đã hỗ trợ hoàn tất.,CT01,D05,PF006,CRM
+700165,200050,2026-01-28,Chi nhánh / PGD,Yêu cầu sao kê,Khách hàng yêu cầu sao kê tài khoản 6 tháng gần nhất — đã hỗ trợ hoàn tất.,CT01,D05,PF006,CRM
+700166,200051,2026-08-18,Ứng dụng VietABank EzMobile,Chăm sóc định kỳ,"RM gọi hỏi thăm trải nghiệm sử dụng dịch vụ, khách hàng hài lòng.",DN01,D05,PF005,DWH
+700167,200051,2026-01-09,Email,Tra cứu biểu phí,Khách hàng hỏi biểu phí chuyển tiền quốc tế và thẻ Visa — đã giải đáp.,DN01,D05,PF005,CRM
+700168,200051,2026-08-05,Ứng dụng VietABank EzMobile,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,DN01,D05,PF005,DWH
+700169,200052,2026-02-12,Email,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,HN02,D02,PF002,DWH
+700170,200052,2026-06-18,Tổng đài CSKH 1900 555 590,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,HN02,D02,PF002,CRM
+700171,200052,2026-08-28,Internet Banking,Chăm sóc định kỳ,"RM gọi hỏi thăm trải nghiệm sử dụng dịch vụ, khách hàng hài lòng.",HN02,D02,PF002,CRM
+700172,200053,2026-02-10,Internet Banking,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,HCM01,D03,PF003,CRM
+700173,200053,2026-03-22,Chi nhánh / PGD,Yêu cầu sao kê,Khách hàng yêu cầu sao kê tài khoản 6 tháng gần nhất — đã hỗ trợ hoàn tất.,HCM01,D03,PF003,CRM
+700174,200053,2026-08-06,Ứng dụng VietABank EzMobile,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,HCM01,D03,PF003,CRM
+700175,200054,2026-01-30,Ứng dụng VietABank EzMobile,Tra cứu biểu phí,Khách hàng hỏi biểu phí chuyển tiền quốc tế và thẻ Visa — đã giải đáp.,CT01,D05,PF006,DWH
+700176,200054,2025-12-04,Tổng đài CSKH 1900 555 590,Tra cứu biểu phí,Khách hàng hỏi biểu phí chuyển tiền quốc tế và thẻ Visa — đã giải đáp.,CT01,D05,PF006,DWH
+700177,200055,2025-11-09,Internet Banking,Tra cứu biểu phí,Khách hàng hỏi biểu phí chuyển tiền quốc tế và thẻ Visa — đã giải đáp.,CT01,D05,PF006,DWH
+700178,200055,2025-12-31,Tổng đài CSKH 1900 555 590,Chăm sóc định kỳ,"RM gọi hỏi thăm trải nghiệm sử dụng dịch vụ, khách hàng hài lòng.",CT01,D05,PF006,DWH
+700179,200055,2026-04-01,Tổng đài CSKH 1900 555 590,Yêu cầu sao kê,Khách hàng yêu cầu sao kê tài khoản 6 tháng gần nhất — đã hỗ trợ hoàn tất.,CT01,D05,PF006,DWH
+700180,200056,2026-08-22,Chi nhánh / PGD,Tra cứu biểu phí,Khách hàng hỏi biểu phí chuyển tiền quốc tế và thẻ Visa — đã giải đáp.,HCM01,D03,PF003,CRM
+700181,200056,2025-12-26,Internet Banking,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,HCM01,D03,PF003,CRM
+700182,200056,2026-01-26,Internet Banking,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,HCM01,D03,PF003,CRM
+700183,200057,2026-05-18,Internet Banking,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,HCM01,D03,PF003,DWH
+700184,200057,2025-12-20,Email,Yêu cầu sao kê,Khách hàng yêu cầu sao kê tài khoản 6 tháng gần nhất — đã hỗ trợ hoàn tất.,HCM01,D03,PF003,CRM
+700185,200057,2026-01-17,Internet Banking,Chăm sóc định kỳ,"RM gọi hỏi thăm trải nghiệm sử dụng dịch vụ, khách hàng hài lòng.",HCM01,D03,PF003,CRM
+700186,200058,2025-12-04,Internet Banking,Chăm sóc định kỳ,"RM gọi hỏi thăm trải nghiệm sử dụng dịch vụ, khách hàng hài lòng.",DN01,D05,PF005,DWH
+700187,200058,2026-04-12,Ứng dụng VietABank EzMobile,Yêu cầu sao kê,Khách hàng yêu cầu sao kê tài khoản 6 tháng gần nhất — đã hỗ trợ hoàn tất.,DN01,D05,PF005,CRM
+700188,200058,2025-11-19,Email,Chăm sóc định kỳ,"RM gọi hỏi thăm trải nghiệm sử dụng dịch vụ, khách hàng hài lòng.",DN01,D05,PF005,CRM
+700189,200059,2026-02-19,Ứng dụng VietABank EzMobile,Yêu cầu sao kê,Khách hàng yêu cầu sao kê tài khoản 6 tháng gần nhất — đã hỗ trợ hoàn tất.,HCM01,D03,PF003,DWH
+700190,200059,2026-08-19,Ứng dụng VietABank EzMobile,Chăm sóc định kỳ,"RM gọi hỏi thăm trải nghiệm sử dụng dịch vụ, khách hàng hài lòng.",HCM01,D03,PF003,DWH
+700191,200060,2026-06-11,Ứng dụng VietABank EzMobile,Yêu cầu sao kê,Khách hàng yêu cầu sao kê tài khoản 6 tháng gần nhất — đã hỗ trợ hoàn tất.,HCM01,D03,PF003,DWH
+700192,200060,2026-05-02,Internet Banking,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,HCM01,D03,PF003,CRM
+700193,200060,2026-02-22,Chi nhánh / PGD,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,HCM01,D03,PF003,DWH
+700194,200060,2026-10-28,Chi nhánh / PGD,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,HCM01,D03,PF003,DWH
+700195,200061,2026-08-17,Ứng dụng VietABank EzMobile,Chăm sóc định kỳ,"RM gọi hỏi thăm trải nghiệm sử dụng dịch vụ, khách hàng hài lòng.",HN02,D02,PF002,CRM
+700196,200061,2026-05-23,Internet Banking,Tra cứu biểu phí,Khách hàng hỏi biểu phí chuyển tiền quốc tế và thẻ Visa — đã giải đáp.,HN02,D02,PF002,CRM
+700197,200061,2026-03-23,Ứng dụng VietABank EzMobile,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,HN02,D02,PF002,DWH
+700198,200061,2026-06-15,Tổng đài CSKH 1900 555 590,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,HN02,D02,PF002,CRM
+700199,200062,2026-03-10,Tổng đài CSKH 1900 555 590,Yêu cầu sao kê,Khách hàng yêu cầu sao kê tài khoản 6 tháng gần nhất — đã hỗ trợ hoàn tất.,DN01,D05,PF005,DWH
+700200,200062,2025-12-30,Internet Banking,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,DN01,D05,PF005,DWH
+700201,200062,2026-10-25,Tổng đài CSKH 1900 555 590,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,DN01,D05,PF005,CRM
+700202,200063,2026-02-03,Email,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,DN01,D05,PF005,CRM
+700203,200063,2026-04-27,Internet Banking,Tra cứu biểu phí,Khách hàng hỏi biểu phí chuyển tiền quốc tế và thẻ Visa — đã giải đáp.,DN01,D05,PF005,DWH
+700204,200063,2026-02-02,Internet Banking,Tra cứu biểu phí,Khách hàng hỏi biểu phí chuyển tiền quốc tế và thẻ Visa — đã giải đáp.,DN01,D05,PF005,DWH
+700205,200064,2026-06-15,Internet Banking,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,DN01,D05,PF005,CRM
+700206,200064,2025-12-22,Chi nhánh / PGD,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,DN01,D05,PF005,DWH
+700207,200065,2026-05-29,Email,Tra cứu biểu phí,Khách hàng hỏi biểu phí chuyển tiền quốc tế và thẻ Visa — đã giải đáp.,HN01,D01,PF001,CRM
+700208,200065,2026-04-01,Email,Tra cứu biểu phí,Khách hàng hỏi biểu phí chuyển tiền quốc tế và thẻ Visa — đã giải đáp.,HN01,D01,PF001,CRM
+700209,200065,2026-02-13,Email,Yêu cầu sao kê,Khách hàng yêu cầu sao kê tài khoản 6 tháng gần nhất — đã hỗ trợ hoàn tất.,HN01,D01,PF001,DWH
+700210,200065,2025-11-06,Tổng đài CSKH 1900 555 590,Tra cứu biểu phí,Khách hàng hỏi biểu phí chuyển tiền quốc tế và thẻ Visa — đã giải đáp.,HN01,D01,PF001,CRM
+700211,200066,2026-10-30,Ứng dụng VietABank EzMobile,Yêu cầu sao kê,Khách hàng yêu cầu sao kê tài khoản 6 tháng gần nhất — đã hỗ trợ hoàn tất.,HCM01,D03,PF003,DWH
+700212,200066,2026-06-05,Tổng đài CSKH 1900 555 590,Chăm sóc định kỳ,"RM gọi hỏi thăm trải nghiệm sử dụng dịch vụ, khách hàng hài lòng.",HCM01,D03,PF003,CRM
+700213,200067,2026-01-18,Email,Yêu cầu sao kê,Khách hàng yêu cầu sao kê tài khoản 6 tháng gần nhất — đã hỗ trợ hoàn tất.,DN01,D05,PF005,CRM
+700214,200067,2026-07-21,Internet Banking,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,DN01,D05,PF005,CRM
+700215,200067,2026-08-26,Ứng dụng VietABank EzMobile,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,DN01,D05,PF005,DWH
+700216,200068,2026-08-08,Internet Banking,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,HN02,D02,PF002,DWH
+700217,200068,2026-02-01,Internet Banking,Tra cứu biểu phí,Khách hàng hỏi biểu phí chuyển tiền quốc tế và thẻ Visa — đã giải đáp.,HN02,D02,PF002,DWH
+700218,200069,2026-02-08,Chi nhánh / PGD,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,HN02,D02,PF002,CRM
+700219,200069,2026-06-16,Tổng đài CSKH 1900 555 590,Yêu cầu sao kê,Khách hàng yêu cầu sao kê tài khoản 6 tháng gần nhất — đã hỗ trợ hoàn tất.,HN02,D02,PF002,CRM
+700220,200069,2026-10-02,Ứng dụng VietABank EzMobile,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,HN02,D02,PF002,DWH
+700221,200069,2025-12-03,Email,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,HN02,D02,PF002,CRM
+700222,200070,2025-11-12,Tổng đài CSKH 1900 555 590,Chăm sóc định kỳ,"RM gọi hỏi thăm trải nghiệm sử dụng dịch vụ, khách hàng hài lòng.",HN02,D02,PF002,DWH
+700223,200070,2026-08-01,Email,Chăm sóc định kỳ,"RM gọi hỏi thăm trải nghiệm sử dụng dịch vụ, khách hàng hài lòng.",HN02,D02,PF002,DWH
+700224,200070,2026-08-09,Email,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,HN02,D02,PF002,CRM
+700225,200071,2026-07-31,Chi nhánh / PGD,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,HN01,D01,PF001,DWH
+700226,200071,2026-02-11,Internet Banking,Yêu cầu sao kê,Khách hàng yêu cầu sao kê tài khoản 6 tháng gần nhất — đã hỗ trợ hoàn tất.,HN01,D01,PF001,DWH
+700227,200071,2026-04-24,Email,Chăm sóc định kỳ,"RM gọi hỏi thăm trải nghiệm sử dụng dịch vụ, khách hàng hài lòng.",HN01,D01,PF001,DWH
+700228,200072,2026-06-23,Chi nhánh / PGD,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,HN02,D02,PF002,DWH
+700229,200072,2026-05-01,Internet Banking,Chăm sóc định kỳ,"RM gọi hỏi thăm trải nghiệm sử dụng dịch vụ, khách hàng hài lòng.",HN02,D02,PF002,DWH
+700230,200072,2026-10-22,Tổng đài CSKH 1900 555 590,Yêu cầu sao kê,Khách hàng yêu cầu sao kê tài khoản 6 tháng gần nhất — đã hỗ trợ hoàn tất.,HN02,D02,PF002,DWH
+700231,200073,2026-09-05,Chi nhánh / PGD,Chăm sóc định kỳ,"RM gọi hỏi thăm trải nghiệm sử dụng dịch vụ, khách hàng hài lòng.",HCM02,D04,PF004,CRM
+700232,200073,2026-09-14,Chi nhánh / PGD,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,HCM02,D04,PF004,CRM
+700233,200074,2025-12-31,Internet Banking,Chăm sóc định kỳ,"RM gọi hỏi thăm trải nghiệm sử dụng dịch vụ, khách hàng hài lòng.",HCM02,D04,PF004,CRM
+700234,200074,2026-09-03,Tổng đài CSKH 1900 555 590,Chăm sóc định kỳ,"RM gọi hỏi thăm trải nghiệm sử dụng dịch vụ, khách hàng hài lòng.",HCM02,D04,PF004,DWH
+700235,200074,2026-09-19,Tổng đài CSKH 1900 555 590,Yêu cầu sao kê,Khách hàng yêu cầu sao kê tài khoản 6 tháng gần nhất — đã hỗ trợ hoàn tất.,HCM02,D04,PF004,DWH
+700236,200074,2025-11-13,Ứng dụng VietABank EzMobile,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,HCM02,D04,PF004,DWH
+700237,200075,2026-07-05,Ứng dụng VietABank EzMobile,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,CT01,D05,PF006,DWH
+700238,200075,2026-09-07,Ứng dụng VietABank EzMobile,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,CT01,D05,PF006,CRM
+700239,200075,2026-06-09,Email,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,CT01,D05,PF006,CRM
+700240,200075,2026-03-27,Chi nhánh / PGD,Tra cứu biểu phí,Khách hàng hỏi biểu phí chuyển tiền quốc tế và thẻ Visa — đã giải đáp.,CT01,D05,PF006,DWH
+700241,200076,2026-07-09,Internet Banking,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,HCM01,D03,PF003,CRM
+700242,200076,2026-02-14,Tổng đài CSKH 1900 555 590,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,HCM01,D03,PF003,CRM
+700243,200077,2026-05-28,Tổng đài CSKH 1900 555 590,Chăm sóc định kỳ,"RM gọi hỏi thăm trải nghiệm sử dụng dịch vụ, khách hàng hài lòng.",DN01,D05,PF005,DWH
+700244,200077,2026-05-23,Tổng đài CSKH 1900 555 590,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,DN01,D05,PF005,DWH
+700245,200077,2026-05-13,Ứng dụng VietABank EzMobile,Chăm sóc định kỳ,"RM gọi hỏi thăm trải nghiệm sử dụng dịch vụ, khách hàng hài lòng.",DN01,D05,PF005,CRM
+700246,200077,2026-03-29,Email,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,DN01,D05,PF005,CRM
+700247,200078,2026-03-31,Email,Tra cứu biểu phí,Khách hàng hỏi biểu phí chuyển tiền quốc tế và thẻ Visa — đã giải đáp.,CT01,D05,PF006,CRM
+700248,200078,2026-06-27,Chi nhánh / PGD,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,CT01,D05,PF006,CRM
+700249,200078,2026-09-06,Ứng dụng VietABank EzMobile,Chăm sóc định kỳ,"RM gọi hỏi thăm trải nghiệm sử dụng dịch vụ, khách hàng hài lòng.",CT01,D05,PF006,DWH
+700250,200079,2026-09-04,Chi nhánh / PGD,Tra cứu biểu phí,Khách hàng hỏi biểu phí chuyển tiền quốc tế và thẻ Visa — đã giải đáp.,HCM01,D03,PF003,DWH
+700251,200079,2025-12-20,Chi nhánh / PGD,Chăm sóc định kỳ,"RM gọi hỏi thăm trải nghiệm sử dụng dịch vụ, khách hàng hài lòng.",HCM01,D03,PF003,CRM
+700252,200079,2026-09-03,Tổng đài CSKH 1900 555 590,Chăm sóc định kỳ,"RM gọi hỏi thăm trải nghiệm sử dụng dịch vụ, khách hàng hài lòng.",HCM01,D03,PF003,DWH
+700253,200079,2026-01-13,Tổng đài CSKH 1900 555 590,Tra cứu biểu phí,Khách hàng hỏi biểu phí chuyển tiền quốc tế và thẻ Visa — đã giải đáp.,HCM01,D03,PF003,DWH
+700254,200080,2026-06-16,Email,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,HN01,D01,PF001,CRM
+700255,200080,2026-03-25,Email,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,HN01,D01,PF001,CRM
+700256,200080,2026-10-15,Chi nhánh / PGD,Yêu cầu sao kê,Khách hàng yêu cầu sao kê tài khoản 6 tháng gần nhất — đã hỗ trợ hoàn tất.,HN01,D01,PF001,CRM
+700257,200081,2026-09-13,Chi nhánh / PGD,Chăm sóc định kỳ,"RM gọi hỏi thăm trải nghiệm sử dụng dịch vụ, khách hàng hài lòng.",HCM01,D03,PF003,DWH
+700258,200081,2026-09-10,Chi nhánh / PGD,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,HCM01,D03,PF003,CRM
+700259,200081,2026-07-29,Chi nhánh / PGD,Tra cứu biểu phí,Khách hàng hỏi biểu phí chuyển tiền quốc tế và thẻ Visa — đã giải đáp.,HCM01,D03,PF003,CRM
+700260,200082,2026-09-13,Ứng dụng VietABank EzMobile,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,HN02,D02,PF002,DWH
+700261,200082,2026-03-17,Internet Banking,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,HN02,D02,PF002,CRM
+700262,200083,2026-04-26,Ứng dụng VietABank EzMobile,Yêu cầu sao kê,Khách hàng yêu cầu sao kê tài khoản 6 tháng gần nhất — đã hỗ trợ hoàn tất.,DN01,D05,PF005,DWH
+700263,200083,2026-07-18,Internet Banking,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,DN01,D05,PF005,CRM
+700264,200084,2026-04-23,Email,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,CT01,D05,PF006,DWH
+700265,200084,2025-12-19,Chi nhánh / PGD,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,CT01,D05,PF006,CRM
+700266,200084,2026-10-17,Email,Yêu cầu sao kê,Khách hàng yêu cầu sao kê tài khoản 6 tháng gần nhất — đã hỗ trợ hoàn tất.,CT01,D05,PF006,DWH
+700267,200085,2026-11-17,Internet Banking,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,HCM01,D03,PF003,CRM
+700268,200085,2026-06-18,Tổng đài CSKH 1900 555 590,Yêu cầu sao kê,Khách hàng yêu cầu sao kê tài khoản 6 tháng gần nhất — đã hỗ trợ hoàn tất.,HCM01,D03,PF003,CRM
+700269,200085,2026-09-24,Ứng dụng VietABank EzMobile,Tra cứu biểu phí,Khách hàng hỏi biểu phí chuyển tiền quốc tế và thẻ Visa — đã giải đáp.,HCM01,D03,PF003,DWH
+700270,200086,2025-11-22,Internet Banking,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,HN01,D01,PF001,CRM
+700271,200086,2026-08-13,Chi nhánh / PGD,Chăm sóc định kỳ,"RM gọi hỏi thăm trải nghiệm sử dụng dịch vụ, khách hàng hài lòng.",HN01,D01,PF001,DWH
+700272,200086,2026-05-22,Email,Yêu cầu sao kê,Khách hàng yêu cầu sao kê tài khoản 6 tháng gần nhất — đã hỗ trợ hoàn tất.,HN01,D01,PF001,DWH
+700273,200087,2026-11-17,Email,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,HCM02,D04,PF004,DWH
+700274,200087,2026-02-03,Chi nhánh / PGD,Chăm sóc định kỳ,"RM gọi hỏi thăm trải nghiệm sử dụng dịch vụ, khách hàng hài lòng.",HCM02,D04,PF004,DWH
+700275,200088,2026-01-17,Email,Tra cứu biểu phí,Khách hàng hỏi biểu phí chuyển tiền quốc tế và thẻ Visa — đã giải đáp.,HCM01,D03,PF003,DWH
+700276,200088,2026-05-19,Email,Chăm sóc định kỳ,"RM gọi hỏi thăm trải nghiệm sử dụng dịch vụ, khách hàng hài lòng.",HCM01,D03,PF003,CRM
+700277,200089,2025-12-21,Internet Banking,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,HCM02,D04,PF004,CRM
+700278,200089,2026-06-14,Ứng dụng VietABank EzMobile,Tra cứu biểu phí,Khách hàng hỏi biểu phí chuyển tiền quốc tế và thẻ Visa — đã giải đáp.,HCM02,D04,PF004,CRM
+700279,200089,2026-03-21,Ứng dụng VietABank EzMobile,Chăm sóc định kỳ,"RM gọi hỏi thăm trải nghiệm sử dụng dịch vụ, khách hàng hài lòng.",HCM02,D04,PF004,DWH
+700280,200089,2026-10-02,Ứng dụng VietABank EzMobile,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,HCM02,D04,PF004,CRM
+700281,200090,2026-09-24,Tổng đài CSKH 1900 555 590,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,HCM01,D03,PF003,DWH
+700282,200090,2026-04-25,Ứng dụng VietABank EzMobile,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,HCM01,D03,PF003,DWH
+700283,200090,2026-06-10,Tổng đài CSKH 1900 555 590,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,HCM01,D03,PF003,CRM
+700284,200090,2026-11-15,Chi nhánh / PGD,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,HCM01,D03,PF003,CRM
+700285,200091,2026-10-11,Internet Banking,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,HN02,D02,PF002,CRM
+700286,200091,2026-08-14,Internet Banking,Tra cứu biểu phí,Khách hàng hỏi biểu phí chuyển tiền quốc tế và thẻ Visa — đã giải đáp.,HN02,D02,PF002,CRM
+700287,200091,2026-08-24,Ứng dụng VietABank EzMobile,Yêu cầu sao kê,Khách hàng yêu cầu sao kê tài khoản 6 tháng gần nhất — đã hỗ trợ hoàn tất.,HN02,D02,PF002,DWH
+700288,200091,2025-11-26,Internet Banking,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,HN02,D02,PF002,CRM
+700289,200092,2026-03-27,Tổng đài CSKH 1900 555 590,Chăm sóc định kỳ,"RM gọi hỏi thăm trải nghiệm sử dụng dịch vụ, khách hàng hài lòng.",HN02,D02,PF002,CRM
+700290,200092,2026-07-03,Chi nhánh / PGD,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,HN02,D02,PF002,DWH
+700291,200092,2026-06-29,Email,Chăm sóc định kỳ,"RM gọi hỏi thăm trải nghiệm sử dụng dịch vụ, khách hàng hài lòng.",HN02,D02,PF002,CRM
+700292,200092,2026-09-11,Tổng đài CSKH 1900 555 590,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,HN02,D02,PF002,DWH
+700293,200093,2026-03-28,Chi nhánh / PGD,Yêu cầu sao kê,Khách hàng yêu cầu sao kê tài khoản 6 tháng gần nhất — đã hỗ trợ hoàn tất.,HCM01,D03,PF003,DWH
+700294,200093,2026-07-25,Internet Banking,Tra cứu biểu phí,Khách hàng hỏi biểu phí chuyển tiền quốc tế và thẻ Visa — đã giải đáp.,HCM01,D03,PF003,DWH
+700295,200094,2026-07-23,Internet Banking,Yêu cầu sao kê,Khách hàng yêu cầu sao kê tài khoản 6 tháng gần nhất — đã hỗ trợ hoàn tất.,HCM01,D03,PF003,DWH
+700296,200094,2026-10-10,Internet Banking,Chăm sóc định kỳ,"RM gọi hỏi thăm trải nghiệm sử dụng dịch vụ, khách hàng hài lòng.",HCM01,D03,PF003,CRM
+700297,200095,2026-08-15,Internet Banking,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,HN01,D01,PF001,CRM
+700298,200095,2026-11-12,Chi nhánh / PGD,Chăm sóc định kỳ,"RM gọi hỏi thăm trải nghiệm sử dụng dịch vụ, khách hàng hài lòng.",HN01,D01,PF001,DWH
+700299,200095,2026-11-01,Ứng dụng VietABank EzMobile,Yêu cầu sao kê,Khách hàng yêu cầu sao kê tài khoản 6 tháng gần nhất — đã hỗ trợ hoàn tất.,HN01,D01,PF001,DWH
+700300,200096,2026-06-08,Tổng đài CSKH 1900 555 590,Yêu cầu sao kê,Khách hàng yêu cầu sao kê tài khoản 6 tháng gần nhất — đã hỗ trợ hoàn tất.,HCM02,D04,PF004,DWH
+700301,200096,2026-10-24,Email,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,HCM02,D04,PF004,DWH
+700302,200097,2026-09-07,Chi nhánh / PGD,Chăm sóc định kỳ,"RM gọi hỏi thăm trải nghiệm sử dụng dịch vụ, khách hàng hài lòng.",HCM02,D04,PF004,CRM
+700303,200097,2026-03-02,Internet Banking,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,HCM02,D04,PF004,CRM
+700304,200097,2025-11-07,Email,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,HCM02,D04,PF004,DWH
+700305,200098,2026-04-25,Chi nhánh / PGD,Tra cứu biểu phí,Khách hàng hỏi biểu phí chuyển tiền quốc tế và thẻ Visa — đã giải đáp.,HN01,D01,PF001,DWH
+700306,200098,2026-10-29,Ứng dụng VietABank EzMobile,Chăm sóc định kỳ,"RM gọi hỏi thăm trải nghiệm sử dụng dịch vụ, khách hàng hài lòng.",HN01,D01,PF001,DWH
+700307,200098,2025-12-22,Internet Banking,Chăm sóc định kỳ,"RM gọi hỏi thăm trải nghiệm sử dụng dịch vụ, khách hàng hài lòng.",HN01,D01,PF001,CRM
+700308,200098,2026-09-05,Chi nhánh / PGD,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,HN01,D01,PF001,CRM
+700309,200099,2026-03-14,Chi nhánh / PGD,Yêu cầu sao kê,Khách hàng yêu cầu sao kê tài khoản 6 tháng gần nhất — đã hỗ trợ hoàn tất.,DN01,D05,PF005,CRM
+700310,200099,2026-07-04,Email,Tra cứu biểu phí,Khách hàng hỏi biểu phí chuyển tiền quốc tế và thẻ Visa — đã giải đáp.,DN01,D05,PF005,DWH
+700311,200099,2026-01-20,Email,Hỗ trợ kỹ thuật,Hướng dẫn kích hoạt sinh trắc học trên ứng dụng VietABank EzMobile — đã xử lý xong.,DN01,D05,PF005,CRM
+700312,200100,2026-08-06,Chi nhánh / PGD,Yêu cầu sao kê,Khách hàng yêu cầu sao kê tài khoản 6 tháng gần nhất — đã hỗ trợ hoàn tất.,CT01,D05,PF006,CRM
+700313,200100,2026-09-24,Email,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,CT01,D05,PF006,DWH
+700314,200100,2025-12-01,Internet Banking,Tư vấn sản phẩm,Tư vấn gói tiết kiệm online và ưu đãi lãi suất kỳ hạn 12 tháng.,CT01,D05,PF006,DWH
+700315,200100,2026-09-19,Tổng đài CSKH 1900 555 590,Chăm sóc định kỳ,"RM gọi hỏi thăm trải nghiệm sử dụng dịch vụ, khách hàng hài lòng.",CT01,D05,PF006,CRM

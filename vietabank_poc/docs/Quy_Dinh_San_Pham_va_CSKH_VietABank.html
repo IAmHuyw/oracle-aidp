@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Quy định Sản phẩm, Xử lý Sự cố Thẻ và Chính sách NBO/NBA - VietABank</title>
+<style>
+  @page {
+    size: A4;
+    margin: 18mm 16mm 18mm 16mm;
+  }
+  body {
+    font-family: "Arial", "Liberation Sans", sans-serif;
+    font-size: 10.5pt;
+    line-height: 1.55;
+    color: #1f2937;
+  }
+  .header-banner {
+    border-bottom: 3px solid #0b4f8c;
+    padding-bottom: 10px;
+    margin-bottom: 18px;
+  }
+  .bank-name {
+    font-size: 12pt;
+    font-weight: 700;
+    color: #0b4f8c;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+  }
+  .doc-title {
+    font-size: 17pt;
+    font-weight: 800;
+    color: #111827;
+    margin: 6px 0 4px 0;
+  }
+  .doc-meta {
+    font-size: 9pt;
+    color: #4b5563;
+  }
+  .notice-box {
+    background: #f0f6fc;
+    border-left: 4px solid #0b4f8c;
+    padding: 10px 12px;
+    margin: 12px 0 18px 0;
+    font-size: 9.5pt;
+  }
+  .warning-box {
+    background: #fef2f2;
+    border-left: 4px solid #b91c1c;
+    padding: 10px 12px;
+    margin: 12px 0;
+    font-size: 9.8pt;
+  }
+  h2 {
+    font-size: 13pt;
+    color: #0b4f8c;
+    border-bottom: 1px solid #d1d5db;
+    padding-bottom: 4px;
+    margin-top: 20px;
+    page-break-after: avoid;
+  }
+  h3 {
+    font-size: 11pt;
+    color: #111827;
+    margin-top: 12px;
+    margin-bottom: 4px;
+    page-break-after: avoid;
+  }
+  p { margin: 5px 0; }
+  ul, ol { margin: 5px 0 8px 18px; padding: 0; }
+  li { margin-bottom: 3px; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0 14px 0;
+    font-size: 9.3pt;
+    page-break-inside: avoid;
+  }
+  th, td {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    text-align: left;
+    vertical-align: top;
+  }
+  th {
+    background: #0b4f8c;
+    color: #ffffff;
+    font-weight: 600;
+  }
+  tr:nth-child(even) td {
+    background: #f8fafc;
+  }
+  .footer-note {
+    margin-top: 24px;
+    padding-top: 8px;
+    border-top: 1px solid #d1d5db;
+    font-size: 8.5pt;
+    color: #6b7280;
+  }
+</style>
+</head>
+<body>
+
+<div class="header-banner">
+  <div class="bank-name">NGÂN HÀNG TMCP VIỆT Á (VIETABANK) — KHỐI KHÁCH HÀNG CÁ NHÂN &amp; QUẢN TRỊ DỮ LIỆU</div>
+  <div class="doc-title">CẨM NANG QUY ĐỊNH SẢN PHẨM, QUY TRÌNH XỬ LÝ SỰ CỐ THẺ VÀ CHÍNH SÁCH NEXT BEST OFFER / NEXT BEST ACTION</div>
+  <div class="doc-meta">
+    Mã văn bản: <strong>VAB-CSKH-C360-2026-01</strong> &nbsp;|&nbsp;
+    Phiên bản: <strong>1.0 (Tài liệu Knowledge Base cho hệ thống Customer 360 &amp; AI Agent trên Oracle AIDP)</strong> &nbsp;|&nbsp;
+    Ngày hiệu lực: <strong>27/11/2026</strong>
+  </div>
+</div>
+
+<div class="notice-box">
+  <strong>Phạm vi áp dụng:</strong> Tài liệu này tổng hợp các quy định sản phẩm khách hàng cá nhân, biểu phí tham khảo, quy trình xử lý sự cố thẻ ATM/khiếu nại của Ngân hàng TMCP Việt Á (VietABank) kết hợp chính sách quản trị trải nghiệm khách hàng (NBO/NBA &amp; Sales Suppression) dùng làm nguồn tri thức chuẩn (Knowledge Base / RAG) cho Cán bộ Quản lý Khách hàng (RM), Tổng đài CSKH và Trợ lý AI Agent trong dự án POC Customer 360.
+</div>
+
+<h2>CHƯƠNG I: THÔNG TIN CHUNG VÀ KÊNH HỖ TRỢ CHÍNH THỨC</h2>
+
+<h3>Điều 1. Kênh chăm sóc khách hàng 24/7 của VietABank</h3>
+<ul>
+  <li><strong>Tổng đài CSKH toàn quốc (24/7):</strong> <strong>1900 555 590</strong> (hỗ trợ khóa thẻ khẩn cấp, báo nuốt thẻ ATM, tra soát giao dịch và tư vấn sản phẩm).</li>
+  <li><strong>Số hỗ trợ thay thế / Gọi từ nước ngoài:</strong> <strong>02836 222 590</strong>.</li>
+  <li><strong>Email tiếp nhận hỗ trợ:</strong> <code>contactcenter@vietabank.com.vn</code>.</li>
+  <li><strong>Kênh ngân hàng số:</strong> Ứng dụng <strong>VietABank EzMobile</strong>, Internet Banking và mạng lưới Chi nhánh / Phòng giao dịch (CN/PGD) VietABank trên toàn quốc.</li>
+</ul>
+
+<h3>Điều 2. Phân khúc Khách hàng Cá nhân áp dụng ưu đãi</h3>
+<ul>
+  <li><strong>Priority (Hạng Bạch Kim):</strong> Khách hàng ưu tiên có tổng tài sản tiền gửi/đầu tư từ 2 tỷ VND trở lên hoặc đáp ứng tiêu chí định danh Priority của VietABank; được phục vụ bởi RM chuyên trách và ưu tiên miễn/giảm phí dịch vụ.</li>
+  <li><strong>Affluent (Hạng Vàng):</strong> Khách hàng thu nhập khá/tiềm năng có tổng tài sản từ 500 triệu VND đến dưới 2 tỷ VND; nhóm trọng tâm bán chéo thẻ tín dụng quốc tế và gói tiền gửi linh hoạt.</li>
+  <li><strong>Mass (Hạng Chuẩn) &amp; SME:</strong> Khách hàng phổ thông và chủ hộ kinh doanh/doanh nghiệp nhỏ sử dụng tài khoản thanh toán (CASA), tiết kiệm online và vay sản xuất kinh doanh.</li>
+</ul>
+
+<h2>CHƯƠNG II: QUY ĐỊNH PHÁT HÀNH, HỒ SƠ VÀ BIỂU PHÍ THẺ VIETABANK</h2>
+
+<h3>Điều 3. Điều kiện phát hành Thẻ tín dụng VietABank</h3>
+<ol>
+  <li><strong>Độ tuổi:</strong> Chủ thẻ chính từ đủ <strong>18 tuổi</strong> trở lên; chủ thẻ phụ từ đủ <strong>15 tuổi</strong> trở lên, có đầy đủ năng lực hành vi dân sự theo quy định của pháp luật Việt Nam.</li>
+  <li><strong>Năng lực tài chính:</strong> Có thu nhập ổn định từ lương chuyển khoản/nguồn thu hợp pháp <em>hoặc</em> có tài sản bảo đảm / sổ tiết kiệm tại VietABank (hình thức phát hành thẻ tín dụng có tài sản bảo đảm).</li>
+  <li><strong>Điều kiện tín dụng nội bộ:</strong> Không có nợ xấu tại thời điểm xét duyệt; xếp hạng tín dụng nội bộ từ hạng <strong>BB trở lên</strong> (đối với hạng Visa Platinum ưu tiên xếp hạng <strong>AA hoặc A</strong> và tổng tài sản từ 1 tỷ VND trở lên).</li>
+</ol>
+
+<h3>Điều 4. Hồ sơ và Quy trình mở Thẻ tín dụng Quốc tế VietABank Visa Platinum</h3>
+<ol>
+  <li><strong>Hồ sơ bắt buộc:</strong> (a) Giấy đề nghị phát hành thẻ tín dụng kiêm hợp đồng theo mẫu của VietABank; (b) Bản gốc CCCD/CMND hoặc Hộ chiếu còn hiệu lực; (c) Chứng từ chứng minh thu nhập (Hợp đồng lao động, sao kê lương 3–6 tháng gần nhất) <em>hoặc</em> Sổ tiết kiệm/Chứng chỉ tiền gửi tại VietABank làm tài sản bảo đảm.</li>
+  <li><strong>Quy trình 4 bước cho RM:</strong>
+    <ul>
+      <li><em>Bước 1:</em> Kiểm tra hồ sơ Customer 360 (đảm bảo khách hàng chưa có thẻ cùng dòng, không có nợ xấu và không có sự cố/khiếu nại đang mở).</li>
+      <li><em>Bước 2:</em> Tư vấn rõ quyền lợi, hạn mức dự kiến, biểu phí thường niên, phí chuyển đổi ngoại tệ và ngày sao kê.</li>
+      <li><em>Bước 3:</em> Thu thập hồ sơ hợp lệ, tạo Lead trên hệ thống CRM sau khi khách hàng đồng ý và chuyển bộ phận thẩm định thẻ.</li>
+      <li><em>Bước 4:</em> Bàn giao thẻ, hướng dẫn kích hoạt qua ứng dụng VietABank EzMobile và chăm sóc sử dụng trong 30 ngày đầu.</li>
+    </ul>
+  </li>
+</ol>
+
+<h3>Điều 5. Biểu phí tham khảo các dòng Thẻ VietABank</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Dòng thẻ</th>
+      <th>Phí phát hành mới</th>
+      <th>Phí thường niên / quản lý</th>
+      <th>Phí rút tiền mặt &amp; Phí khác</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Thẻ ghi nợ nội địa</strong><br>(Chuẩn / Vàng)</td>
+      <td>Thường: 30.000 – 50.000 VND<br>Nhanh: 80.000 – 100.000 VND</td>
+      <td>~5.000 VND/tháng</td>
+      <td>Rút tiền ATM VietABank &amp; NAPAS: <strong>Miễn phí</strong>.<br>Phát hành lại do mất/hỏng: 30.000 – 50.000 VND (nhanh 80.000 – 100.000 VND).<br><strong>Cấp lại do lỗi kỹ thuật hoặc hết hạn: Miễn phí.</strong></td>
+    </tr>
+    <tr>
+      <td><strong>Thẻ tín dụng nội địa</strong><br>(Chuẩn / Bạch Kim)</td>
+      <td>Thường: 100.000 VND<br>Nhanh: 150.000 VND</td>
+      <td>Thẻ chính: 200.000 – 500.000 VND<br>Thẻ phụ: 150.000 – 400.000 VND</td>
+      <td>Rút tiền mặt: 1% (tối thiểu 30.000 VND).<br>Chậm thanh toán: 4% số tiền chậm trả.</td>
+    </tr>
+    <tr>
+      <td><strong>Thẻ tín dụng Quốc tế VietABank Visa</strong><br>(Classic / Platinum)</td>
+      <td>Thường: <strong>Miễn phí</strong><br>Nhanh: 200.000 – 300.000 VND</td>
+      <td>Thẻ chính: 250.000 VND (Classic) – <strong>800.000 VND (Platinum)</strong> <em>(ưu đãi miễn phí năm đầu nếu thỏa điều kiện phân khúc/chi tiêu)</em>.<br>Thẻ phụ: 200.000 – 500.000 VND.</td>
+      <td>Rút tiền mặt: 4% (tối thiểu 60.000 VND).<br>Phí chuyển đổi ngoại tệ: <strong>2,5% – 2,7%</strong> giá trị giao dịch.<br>Chậm thanh toán: 4% (tối thiểu 100.000 VND).</td>
+    </tr>
+  </tbody>
+</table>
+<p><em>Ghi chú: Biểu phí mang tính tham khảo theo quy định chung của VietABank, chưa bao gồm VAT và có thể được điều chỉnh theo từng thời kỳ ưu đãi.</em></p>
+
+<h2>CHƯƠNG III: QUY ĐỊNH SẢN PHẨM TIỀN GỬI TIẾT KIỆM VÀ CHO VAY KHCN</h2>
+
+<h3>Điều 6. Sản phẩm Gửi tiết kiệm và Chính sách Chăm sóc Đáo hạn</h3>
+<ul>
+  <li><strong>Hình thức triển khai:</strong> Tiết kiệm truyền thống tại quầy, Tiết kiệm trực tuyến qua <strong>VietABank EzMobile</strong> (yêu cầu có tài khoản thanh toán tại VietABank), Tiền gửi có kỳ hạn linh hoạt và Chứng chỉ tiền gửi VietABank.</li>
+  <li><strong>Kỳ hạn &amp; Đáo hạn:</strong> Kỳ hạn linh hoạt từ 1 tuần, 1 tháng đến 12–24 tháng; 3 phương thức đáo hạn: <em>Không tái tục</em>, <em>Tái tục gốc</em>, hoặc <em>Tái tục gốc và lãi</em>. Sổ tiết kiệm được phép dùng cầm cố vay vốn hoặc xác nhận tài chính.</li>
+  <li><strong>Quy tắc giữ chân tiền gửi (Retention NBA):</strong> Đối với khách hàng Priority/Affluent có sổ tiết kiệm sắp đáo hạn trong vòng <strong>15 ngày</strong> (và không có sự cố đang mở), RM chủ động liên hệ trước tối thiểu <strong>7–10 ngày</strong> để tư vấn phương án tái tục hưởng lãi suất ưu đãi và kết hợp bán chéo sản phẩm thẻ/dịch vụ phù hợp.</li>
+</ul>
+
+<h3>Điều 7. Điều kiện Vay tiêu dùng Khách hàng Cá nhân</h3>
+<ul>
+  <li>Khách hàng cá nhân từ đủ <strong>18 tuổi</strong> trở lên đến không quá tuổi lao động quy định tại thời điểm đáo hạn khoản vay, cư trú tại địa bàn hoạt động của CN/PGD VietABank.</li>
+  <li>Mục đích vay hợp pháp (mua/sửa nhà, mua xe ô tô, tiêu dùng cá nhân, sản xuất kinh doanh), có thu nhập ổn định chứng minh khả năng trả nợ gốc và lãi.</li>
+  <li><strong>Tài sản bảo đảm:</strong> Bất động sản, phương tiện vận tải, hoặc cầm cố số dư tiền gửi/sổ tiết kiệm tại VietABank (một số gói vay thấu chi/tiêu dùng tín chấp áp dụng theo quy định lương chuyển khoản từng thời kỳ).</li>
+</ul>
+
+<h2>CHƯƠNG IV: QUY TRÌNH XỬ LÝ SỰ CỐ NUỐT THẺ ATM VÀ TRA SOÁT KHIẾU NẠI</h2>
+
+<h3>Điều 8. Quy trình xử lý sự cố nuốt thẻ ATM</h3>
+<ol>
+  <li><strong>Trường hợp A — Bị nuốt thẻ VietABank tại cây ATM của VietABank:</strong>
+    <ul>
+      <li>Hướng dẫn khách hàng nhấn nút <strong>Cancel (Hủy)</strong> để kiểm tra máy có nhả thẻ không; ghi nhận địa điểm cây ATM và thời điểm xảy ra sự cố.</li>
+      <li>Gọi ngay Tổng đài 24/7 <strong>1900 555 590</strong> để thực hiện <strong>khóa thẻ khẩn cấp</strong> nhằm bảo vệ số dư tài khoản và lập mã phiếu tra soát (<code>TS-YYYYMMDD-XXX</code>).</li>
+      <li>Khách hàng mang <strong>CCCD/CMND hoặc Hộ chiếu gốc</strong> đến CN/PGD quản lý cây ATM để nhận lại thẻ hoặc làm thủ tục cấp lại thẻ mới. Thời gian xử lý chuẩn: <strong>3 – 5 ngày làm việc</strong>. Nếu nguyên nhân do lỗi kỹ thuật cây ATM, VietABank <strong>miễn 100% phí cấp lại thẻ</strong>.</li>
+    </ul>
+  </li>
+  <li><strong>Trường hợp B — Bị nuốt thẻ VietABank tại cây ATM của Ngân hàng khác (liên minh NAPAS):</strong>
+    <ul>
+      <li>Khách hàng vẫn phải gọi ngay Hotline VietABank <strong>1900 555 590</strong> để khóa thẻ khẩn cấp.</li>
+      <li>Do đa số ngân hàng ngoài hệ thống không trả trực tiếp thẻ ngoại mạng (thường thu hồi/hủy thẻ), VietABank hướng dẫn khách hàng thủ tục phát hành lại thẻ mới tại CN/PGD VietABank.</li>
+    </ul>
+  </li>
+</ol>
+
+<h3>Điều 9. Quy trình Tra soát và Khiếu nại Giao dịch Thẻ</h3>
+<ul>
+  <li><strong>Thời hạn tiếp nhận yêu cầu tra soát:</strong> Không ít hơn <strong>60 ngày</strong> kể từ ngày phát sinh giao dịch nghi ngờ sai sót (nuốt thẻ bị trừ tiền, rút tiền không ra tiền nhưng tài khoản bị trừ, chuyển khoản lỗi...).</li>
+  <li><strong>3 kênh tiếp nhận:</strong> (1) Gọi Hotline <strong>1900 555 590</strong> (cuộc gọi được ghi âm làm căn cứ pháp lý); (2) Lập Mẫu Giấy đề nghị tra soát, khiếu nại tại bất kỳ CN/PGD VietABank nào; (3) Theo dõi tiến độ trực tuyến qua tính năng <em>Tra cứu tra soát khiếu nại</em> trên website VietABank bằng Mã tra soát và số CCCD.</li>
+  <li><strong>Thông tin bắt buộc khi tra soát:</strong> Họ tên chủ thẻ, số CCCD, số tài khoản/số thẻ, thời gian, số tiền, mã giao dịch (nếu có) và địa điểm ATM/Đơn vị chấp nhận thẻ.</li>
+</ul>
+
+<h2>CHƯƠNG V: CHÍNH SÁCH NEXT BEST OFFER (NBO), NEXT BEST ACTION (NBA) VÀ QUY TẮC TẠM DỪNG BÁN HÀNG</h2>
+
+<h3>Điều 10. Nguyên tắc thứ tự ưu tiên giữa NBA và NBO</h3>
+<p>Trong mọi kịch bản vận hành trên nền tảng Customer 360 &amp; AI Agent, VietABank áp dụng nguyên tắc: <strong>"Chăm sóc và giải quyết sự cố khách hàng (Service Recovery NBA) luôn được ưu tiên tuyệt đối trước mọi hoạt động chào bán sản phẩm (Sales NBO)."</strong></p>
+
+<div class="warning-box">
+  <strong>Điều 11. Quy tắc Tạm dừng Chào bán bắt buộc (Sales Suppression Rule)</strong><br>
+  1. Khi hồ sơ khách hàng tồn tại bất kỳ sự cố/khiếu nại mức độ cao nào đang ở trạng thái <strong><code>STATUS: OPEN</code></strong> (bao gồm: sự cố nuốt thẻ ATM, rút tiền không nhả tiền nhưng trừ tài khoản, khiếu nại giao dịch/phí chưa đóng), hệ thống Gold Customer 360 <strong>BẮT BUỘC bật cờ <code>SALES_SUPPRESSED = TRUE</code></strong>.<br>
+  2. Trong thời gian cờ <code>SALES_SUPPRESSED = TRUE</code>, <strong>CẤM TUYỆT ĐỐI</strong> RM, Telesales và AI Agent thực hiện cuộc gọi hoặc gửi tin nhắn chào bán sản phẩm mới (NBO) — kể cả khi trước thời điểm xảy ra sự cố khách hàng đang quan tâm hoặc đang trong tiến trình tư vấn mở thẻ/gửi tiết kiệm.<br>
+  3. <strong>Hành động tiếp theo bắt buộc (NBA = <code>SERVICE_RECOVERY</code>):</strong> Hệ thống chuyển hướng cho RM/Tổng đài chủ động gửi lời xin lỗi, cập nhật tiến độ xử lý mã tra soát, xác nhận thẻ đã được khóa an toàn và hỗ trợ nhận lại/cấp lại thẻ miễn phí trong 3–5 ngày làm việc.
+</div>
+
+<h3>Điều 12. Điều kiện Mở lại tư vấn và Thời gian hạ nhiệt (Cooling-off Period)</h3>
+<ol>
+  <li>Hệ thống chỉ tự động gỡ cờ <code>SALES_SUPPRESSED = FALSE</code> khi thỏa đồng thời <strong>2 điều kiện</strong>:
+    <ul>
+      <li>Phiếu sự cố / tra soát đã chuyển sang trạng thái hoàn tất (<strong><code>STATUS: RESOLVED</code></strong> hoặc <strong><code>CLOSED</code></strong>) và khách hàng đã nhận lại/cấp lại thẻ thành công; <strong>VÀ</strong></li>
+      <li>Đã qua thời gian hạ nhiệt tối thiểu <strong>48 giờ</strong> tính từ thời điểm đóng sự cố mà không phát sinh khiếu nại bổ sung.</li>
+    </ul>
+  </li>
+  <li><strong>Hành động sau khi mở khóa (NBA = <code>POST_INCIDENT_FOLLOWUP_AND_RESUME_NBO</code>):</strong> RM thực hiện cuộc gọi <em>hỏi thăm chất lượng sau xử lý</em> trước (xác nhận thẻ mới giao dịch bình thường). Chỉ khi khách hàng xác nhận hài lòng mới tiếp tục nối lại tư vấn sản phẩm NBO phù hợp (có thể kèm chính sách tri ân như miễn phí thường niên năm đầu thẻ Visa Platinum theo thẩm quyền).</li>
+</ol>
+
+<h2>CHƯƠNG VI: BẢO MẬT DỮ LIỆU KHÁCH HÀNG, PHÂN QUYỀN VÀ KIỂM SOÁT AI</h2>
+
+<h3>Điều 13. Phân quyền dữ liệu (Row-Level Security) và Che giấu thông tin nhạy cảm (Data Masking)</h3>
+<ul>
+  <li><strong>Phân quyền theo chi nhánh (RLS):</strong> Cán bộ RM/Telesales thuộc chi nhánh nào chỉ được phép tra cứu khách hàng thuộc phạm vi chi nhánh đó (theo bảng <code>data_grant</code>). Chỉ tài khoản quản trị Hội sở (<code>HO_ADMIN</code>) mới có quyền xem toàn hệ thống.</li>
+  <li><strong>Che giấu dữ liệu nhạy cảm (Data Masking):</strong> Đối với tài khoản phân tích hoặc Telesales không có quyền xem dữ liệu định danh cá nhân (<code>can_view_pii = 0</code>), hệ thống bắt buộc che giấu số CCCD (ví dụ <code>0010****5678</code>) và số điện thoại (<code>0912***678</code>).</li>
+</ul>
+
+<h3>Điều 14. Nguyên tắc Con người ra quyết định cuối cùng (Human-in-the-Loop)</h3>
+<p>Trợ lý AI Agent trên Oracle AI Data Platform chịu trách nhiệm tổng hợp hồ sơ Customer 360, kiểm tra quy tắc NBO/NBA, tra cứu quy định nội bộ kèm <strong>trích dẫn điều khoản (Citation)</strong> và chuẩn bị sẵn thông tin bản nháp <strong>Lead</strong>. Mọi thao tác ghi nhận Lead mới vào hệ thống CRM (bảng <code>leads</code>) hoặc gửi thông điệp tới khách hàng đều phải có bước <strong>kiểm tra và xác nhận bởi cán bộ RM</strong>.</p>
+
+<div class="footer-note">
+  Tài liệu phục vụ POC Customer 360 &amp; Next Best Offer / Next Best Action — Ngân hàng TMCP Việt Á (VietABank) trên Oracle AI Data Platform (AIDP). Các thông số biểu phí &amp; quy trình thẻ tham khảo từ thông tin công bố của VietABank; các quy tắc vận hành NBO/NBA/Suppression là khung chính sách chuẩn hóa phục vụ demo hệ thống AI Knowledge Base (RAG).
+</div>
+
+</body>
+</html>
